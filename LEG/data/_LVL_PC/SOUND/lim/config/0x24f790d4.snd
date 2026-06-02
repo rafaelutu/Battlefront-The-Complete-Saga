@@ -1,0 +1,363 @@
+SoundProperties(-9223372036854775808, 0, 0, 0, -9223372036854775808, 0)
+{
+	Name("0x8edac26d");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	SampleList()
+	{
+		Sample("0xa9050e0c", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, 0, 0, 0, 0)
+{
+	Name("0x9e2d8257");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	SampleList()
+	{
+		Sample("0xdb3b8608", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, 1863789032190771200)
+{
+	Name("0xef69da93");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	SampleList()
+	{
+		Sample("0xa80eb52c", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, -99463936)
+{
+	Name("0xf069dc26");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	SampleList()
+	{
+		Sample("0xab0eb9e5", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, 0)
+{
+	Name("0x6aa6ceaa");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	SampleList()
+	{
+		Sample("0x8d459915", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, -9223372036854775808)
+{
+	Name("0x3f09d8ca");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	SampleList()
+	{
+		Sample("0xdc14f04b", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, 0, 0, 0, 0)
+{
+	Name("0x9e2d8257");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	SampleList()
+	{
+		Sample("0xdb3b8608", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, 0, 0, 0, 0)
+{
+	Name("0x9e2d8257");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	SampleList()
+	{
+		Sample("0xdb3b8608", 1);
+	}
+
+}
+
+SoundProperties(0, -9223372036854775808, 0)
+{
+	Name("0xfcb12c5d");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0xad5bf8be", 1);
+	}
+
+}
+
+SoundProperties(0, 0)
+{
+	Name("0xe4c358b1");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0xc55e30ca", 1);
+	}
+
+}
+
+SoundProperties(-14366192, 0, 0)
+{
+	Name("0xcf32a74b");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x6c7083a", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, -9223372036854775808, -9223372036854775808, 0)
+{
+	Name("0x4ce76e1c");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x9ea8b3c7", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, -9223372036854775808, -9223372036854775808, 0)
+{
+	Name("0xdda9f2c4");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0xa9cb3497", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, -9223372036854775808, -9223372036854775808, 0)
+{
+	Name("0x1df710a6");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0xcc6f9637", 1);
+	}
+
+}
+
+SoundProperties(0, 0, 0, -9223372036854775808, -1672718592, 0.000041, -9223372036854775808, 0, -9223372036854775808)
+{
+	Name("0x92c9a7f0");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x7bef8c9f", 1);
+	}
+
+}
+
+SoundProperties(12.136407, 0, 0, -9223372036854775808, 0.000041, -9223372036854775808, 0, 0, -9223372036854775808)
+{
+	Name("0x7bd88845");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x3d751ef6", 1);
+	}
+
+}
+
+SoundProperties(12.136407, -9223372036854775808, 0, -9223372036854775808, 0.000041, -9223372036854775808, 0, -3392349853974528, -9223372036854775808)
+{
+	Name("0x1e8a34d6");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x80574e85", 1);
+	}
+
+}
+
+SoundProperties(15727913, 0)
+{
+	Name("0x6b2f1862");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x786d1629", 1);
+	}
+
+}
+
+SoundProperties(0, 0)
+{
+	Name("0x3611da93");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Gain(2);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x91d72694", 1);
+	}
+
+}
+
+SoundProperties(-382156996083712, 0)
+{
+	Name("0x61ceca29");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x15be2221", 1);
+	}
+
+}
+
+SoundProperties(-1.304624)
+{
+	Name("0xf4770b75");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x29522b65", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, 27286376, 0.983135, 0, 1862146195456, 811378283525439488, -9223372036854775808)
+{
+	Name("0x3959b5f0");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0xaec0d733", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, 0, -9223372036854775808, 0, 0.000951)
+{
+	Name("0xd5a75955");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x9e5e8aca", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, 195.043457, -9223372036854775808, -1077988864)
+{
+	Name("0x327c0bc");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x55889639", 1);
+	}
+
+}
+
+SoundProperties(0, 0, 0)
+{
+	Name("0x8c1e86bf");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0xf5662176", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, 195.043457, 0)
+{
+	Name("0x492f1eb1");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x710555d0", 1);
+	}
+
+}
+
+SoundProperties(-9223372036854775808, 195.043457, 0, -220142436352)
+{
+	Name("0x19e6d845");
+	Group("0x3f7baeb6");
+	Inherit("weapon_template");
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x6a20f6c6", 1);
+	}
+
+}
+

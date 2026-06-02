@@ -1,0 +1,16 @@
+[WeaponClass]
+
+ClassParent = "com_weap_veh_fly_stingers"
+
+[Properties]
+
+OrdnanceName = "cis_weap_fly_droidgunship_missile_ord"
+LockOnRange = 800.0
+InitialSalvoDelay = 0
+SalvoCount = 2
+ShotsPerSalvo = 1
+SalvoDelay = .01
+ShotDelay = 0.2
+RoundsPerClip = 10
+ReloadTime = 4
+Firesound = "cis_weap_fly_droidgunship_missile_fire"

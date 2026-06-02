@@ -1,0 +1,2 @@
+-keep cis_tank_tread_tracks baseroot aimer_left aimer_right 
+-keepmaterial cis_tank_tread_tracks 

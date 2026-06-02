@@ -1,0 +1,14 @@
+[WeaponClass]
+
+ClassParent = "com_weap_inf_lightsaber"
+GeometryName = "cis_weap_inf_lightsabre.msh"
+
+[Properties]
+
+GeometryName = "cis_weap_inf_lightsabre"
+ComboAnimationBank = "human_sabre melee cis_hero_countdooku"
+FirePointName = "hp_fire"
+LightSaberLength = 1.0
+LightSaberWidth = 0.08
+LightSaberTexture = "redlightsabre"
+LightSaberTrailColor = "255 0 0 128"

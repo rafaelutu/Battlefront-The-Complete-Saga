@@ -1,0 +1,11 @@
+[WeaponClass]
+
+ClassParent = "com_weap_veh_recoilless"
+
+[Properties]
+
+OrdnanceName = "rep_weap_walk_atte_recoilless_ord"
+SalvoCount = 2
+ShotDelay = 1.5
+SalvoDelay = 0.0
+Firesound = "rep_weap_walk_atte_recoilless_fire"

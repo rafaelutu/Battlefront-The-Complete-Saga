@@ -1,0 +1,25 @@
+[OrdnanceClass]
+
+ClassLabel = "emitterordnance"
+
+[Properties]
+
+Explosion = "com_weap_inf_force_push_exp"
+ConeLength = 20
+ConeAngle = 120
+FirstRadius = 0.0
+MaxTargets = 4
+NoChaining = 1
+Damage = 0
+MaxDamage = 0
+JumpDeduction = 0
+DamageThreshold = 0
+MaxJumpDistance = 0
+VehicleScale = 0.0
+ShieldScale = 1.0
+PersonScale = 1.0
+AnimalScale = 1.0
+DroidScale = 1.0
+BuildingScale = 0.0
+Push = 15.0
+AffectFriends = 1

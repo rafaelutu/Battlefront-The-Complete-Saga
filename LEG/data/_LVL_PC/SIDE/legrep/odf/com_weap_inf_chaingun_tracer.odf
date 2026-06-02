@@ -1,0 +1,38 @@
+[OrdnanceClass]
+
+ClassLabel = "bolt"
+
+[Properties]
+
+LaserTexture = "com_sfx_laser_yellow"
+LaserGlowColor = "224 224 160 100"
+LightColor = "224 224 160 150"
+LightRadius = 4.0
+LaserLength = 20.0
+LaserWidth = 0.02
+GlowLength = 24
+BlurLength = 32
+FadeOutTime = .25
+ImpactEffectSoft = "com_sfx_ord_exp"
+ImpactEffectRigid = "com_sfx_ord_exp"
+ImpactEffectStatic = "com_sfx_ord_exp"
+ImpactEffectTerrain = "com_sfx_ord_exp"
+ImpactEffectWater = "com_sfx_watersplash_ord"
+ImpactEffectShield = "com_sfx_ord_exp"
+ExpireEffect = "com_sfx_ord_exp"
+LifeSpan = 0.05
+MaxDamage = 0.0
+Velocity = 2000.0
+Gravity = 1.0
+Rebound = 0.0
+VehicleScale = 0.0
+ShieldScale = 1.0
+PersonScale = 1.0
+DroidScale = 1.0
+BuildingScale = 0.1
+DamageTransitionDelay = 0.0
+DamageTransitionPeriod = 0.0
+DamageFinalDamage = -1.0
+FadeLightColor = 0
+EndLaserGlowColor = "0 0 0 0"
+EndLightColor = "0 0 0 0"

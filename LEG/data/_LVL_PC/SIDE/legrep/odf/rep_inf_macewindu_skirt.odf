@@ -1,0 +1,7 @@
+[GameObjectClass]
+
+ClassParent = "cloth"
+
+[Properties]
+
+attachedmesh = "rep_inf_macewindu"

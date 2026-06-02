@@ -1,0 +1,16 @@
+[GameObjectClass]
+
+ClassLabel = "powerupitem"
+GeometryName = "lego_powerup_ammo.msh"
+
+[Properties]
+
+Lighting = "Dynamic"
+GeometryName = "lego_powerup_ammo"
+SoldierAmmo = 1
+LifeSpan = 30
+PowerupSound = "com_weap_ammo_pickup defer"
+Velocity = 0.0
+Gravity = 1.0
+Rebound = 0.0
+Friction = 1.0

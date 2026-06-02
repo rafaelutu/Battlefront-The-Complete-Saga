@@ -1,0 +1,15 @@
+[GameObjectClass]
+
+ClassParent = "rep_inf_default_rocketeer"
+GeometryName = "rep_inf_arctrooper.msh"
+
+[Properties]
+
+UnitType = "assault"
+IconTexture = "rep_gunner_icon"
+GeometryName = "rep_inf_arctrooper"
+FirstPerson = "REP\reparc;rep_1st_arctrooper"
+GeometryLowRes = "rep_inf_arctrooper_low1"
+ClothODF = "rep_inf_arctrooper_cape"
+OverrideTexture = "rep_inf_arc_blue"
+OverrideTexture2 = "rep_inf_arc_pack_blue"

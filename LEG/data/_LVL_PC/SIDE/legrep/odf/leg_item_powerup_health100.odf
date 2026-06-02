@@ -1,0 +1,15 @@
+[GameObjectClass]
+
+ClassLabel = "powerupitem"
+GeometryName = "lego_powerup_health.msh"
+
+[Properties]
+
+GeometryName = "lego_powerup_health"
+SoldierHealth = 200
+LifeSpan = 30
+PowerupSound = "com_weap_powerup_pickup defer"
+Velocity = 0.0
+Gravity = 1.0
+Rebound = 0.0
+Friction = 1.0

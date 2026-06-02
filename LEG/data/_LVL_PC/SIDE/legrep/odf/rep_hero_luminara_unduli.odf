@@ -1,0 +1,51 @@
+[GameObjectClass]
+
+ClassParent = "com_jedi_default"
+GeometryName = "lego_rep_luminara_unduli.msh"
+
+[Properties]
+
+AISizeType = "HOVER"
+GeometryName = "lego_rep_luminara_unduli"
+GeometryLowRes = "rep_inf_ep3obiwan_low1"
+ClothODF = "lego_rep_luminara_unduli_cape"
+AnimationName = "kiadimundi"
+SkeletonName = "lego_kiadimundi"
+SkeletonRootScale = 0.5
+OverrideTexture = "lego_rep_luminara_unduli"
+OverrideTexture2 = "lego_rep_luminara_unduli_face"
+JetJump = 10.0
+JetPush = 0.0
+JetAcceleration = 10.0
+JetFuelRechargeRate = 0.0
+JetFuelCost = 0.0
+JetFuelInitialCost = 0.0
+JetFuelMinBorder = 0.0
+JetShowHud = 0
+JetEnergyDrain = 40.0
+CollisionScale = "0.0 0.0 0.0"
+WeaponSection = 1
+WeaponName1 = "rep_weap_lightsaber_unduli"
+WeaponAmmo1 = 0
+WeaponSection = 2
+WeaponName2 = "com_weap_inf_sabre_throw"
+WeaponAmmo2 = 0
+WeaponChannel2 = 1
+WeaponSection = 3
+WeaponName3 = "com_weap_inf_force_push"
+WeaponAmmo3 = 0
+WeaponChannel3 = 1
+SndHeroSpawned = "hero_obiWan_spawn"
+SndHeroDefeated = "hero_obiWan_exhausted"
+SndHeroKiller = "hero_obiWan_exhausted"
+VOSound = "rep_off_response_hero_command      SC_Follow"
+VOSound = "rep_off_response_hero_command      SC_StopFollow"
+VOSound = "rep_off_response_hero_command     SC_VehicleWaitUp"
+VOSound = "rep_off_response_hero_command     SC_GetIn"
+VOSound = "rep_off_response_hero_command      SC_GetOut"
+VOSound = "hero_obiWan_AcquiredTarget      AcquiredTarget"
+VOSound = "hero_obiWan_KillingSpree4      KillingSpree4"
+VOUnitType = 190
+SoldierMusic = "rep_hero_ObiWan_lp"
+LowHealthThreshold = 1.1
+FoleyFXClass = "rep_inf_soldier"

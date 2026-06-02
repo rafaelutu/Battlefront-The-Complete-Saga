@@ -1,0 +1,2 @@
+-keep root_l_thigh eff_l_calf root_l_foot root_r_thigh eff_r_calf root_r_foot root_a_spine eff_ribcage root_neck root_l_clavicle eff_l_clavicle root_l_upperarm eff_l_forearm root_l_hand root_r_clavicle eff_r_clavicle root_r_upperarm eff_r_forearm root_r_hand 
+-keepmaterial override_texture2 override_texture 

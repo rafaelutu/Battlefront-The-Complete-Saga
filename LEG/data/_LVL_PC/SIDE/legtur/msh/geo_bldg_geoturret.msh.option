@@ -1,0 +1,2 @@
+-keep base aimer_y aimer_x barrel 
+-nocollision

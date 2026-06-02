@@ -1,0 +1,39 @@
+moviesubtitles()
+{
+	Segment("cormon01");
+	font("gamefont_small");
+	Color(255, 255, 255, 190);
+	SubtitleList()
+	{
+		Subtitle("ifs.movies.corintro.line01", 4.140000, 5.600000);
+		Subtitle("ifs.movies.corintro.line02", 9.890000, 6.600000);
+		Subtitle("ifs.movies.corintro.line03", 16.750000, 2.100000);
+		Subtitle("ifs.movies.corintro.line04", 18.500000, 4.090000);
+		Subtitle("ifs.movies.corintro.line05", 22.870001, 4.030000);
+		Subtitle("ifs.movies.corintro.line06", 26.760000, 4.200000);
+		Subtitle("ifs.movies.corintro.line07", 29.840000, 4.080000);
+		Subtitle("ifs.movies.corintro.line08", 33.950001, 3.110000);
+		Subtitle("ifs.movies.corintro.line09", 37.500000, 4.440000);
+	}
+
+}
+
+moviesubtitles()
+{
+	Segment("cormon02");
+	font("gamefont_small");
+	Color(255, 255, 255, 190);
+	SubtitleList()
+	{
+		Subtitle("ifs.movies.coroutro.line01", 11.120000, 10.120000);
+		Subtitle("ifs.movies.coroutro.line02", 14.820000, 3);
+		Subtitle("ifs.movies.coroutro.line03", 18.200001, 4.700000);
+		Subtitle("ifs.movies.coroutro.line04", 21.510000, 4.280000);
+		Subtitle("ifs.movies.coroutro.line05", 26.559999, 5.050000);
+		Subtitle("ifs.movies.coroutro.line06", 31.299999, 6.200000);
+		Subtitle("ifs.movies.coroutro.line07", 37.900002, 2.600000);
+		Subtitle("ifs.movies.coroutro.line08", 40.560001, 5.660000);
+	}
+
+}
+

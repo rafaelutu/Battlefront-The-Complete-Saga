@@ -1,0 +1,17 @@
+[WeaponClass]
+
+ClassLabel = "shield"
+
+[Properties]
+
+HUDTag = "hud_droideka_shield"
+Label = "Shield"
+RoundsPerClip = 1
+ReloadTime = 0.0
+MaxShield = 3000
+AddShield = -100
+AddShieldOff = 300
+ShieldOffset = "0.0 1.0 0.125"
+ShieldRadius = 1.25
+Firesound = "cis_droideka_shield_on"
+ShieldEffect = "droidekashield"

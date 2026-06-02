@@ -1,0 +1,7 @@
+[GameObjectClass]
+
+ClassParent = "cloth"
+
+[Properties]
+
+attachedmesh = "leg_jed_kenobi"

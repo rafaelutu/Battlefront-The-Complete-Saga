@@ -1,0 +1,11 @@
+[ExplosionClass]
+
+ClassLabel = "explosion"
+
+[Properties]
+
+LifeSpan = 0.2
+Effect = "lsf_fx_stud_explosion"
+Damage = 0.0
+DamageRadius = 0.0
+SoundProperty = "com_weap_obj_med_exp"

@@ -1,0 +1,9 @@
+[WeaponClass]
+
+ClassParent = "com_weap_veh_fly_beam"
+
+[Properties]
+
+OrdnanceName = "cis_weap_fly_droidgunship_beam_ord"
+Firesound = "cis_weap_fly_droidgunship_beam_fire"
+FireLoopSound = "cis_weap_fly_droidgunship_beam_fire_loop"

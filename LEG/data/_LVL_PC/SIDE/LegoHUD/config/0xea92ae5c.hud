@@ -1,0 +1,26 @@
+FileInfo("hud_ner_transforms_lego")
+{
+	Viewports(1, 2, 3, 4);
+}
+
+Viewport("Transforms")
+{
+	EventNameFilter("player%");
+	TransformNumberColor("player1energyfractioncolor")
+	{
+		NumberColor(0.100000, 31, 29, 31);
+		NumberColor(0.200000, 55, 50, 25);
+		NumberColor(0.300000, 80, 69, 23);
+		NumberColor(0.400000, 107, 91, 19);
+		NumberColor(0.500000, 136, 115, 18);
+		NumberColor(0.600000, 163, 137, 15);
+		NumberColor(0.700000, 185, 155, 7);
+		NumberColor(0.800000, 210, 175, 7);
+		NumberColor(0.900000, 230, 190, 2);
+		NumberColor(1, 255, 220, 0);
+		EventInput("player1.energyFraction");
+		EventOutput("player1.energyColor");
+	}
+
+}
+

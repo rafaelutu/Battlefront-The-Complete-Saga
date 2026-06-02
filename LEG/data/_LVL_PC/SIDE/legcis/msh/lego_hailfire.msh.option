@@ -1,0 +1,2 @@
+-keep CIS_HailFire_Droid_center armR missile_right missile_21 missile_17 missile_22 missile_18 missile_left missile_2 missile_6 missile_1 missile_5 armL wheel_left wheel_right collision 
+-keepmaterial wheel_right wheel_left 

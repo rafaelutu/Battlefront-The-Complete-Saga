@@ -1,0 +1,9 @@
+[OrdnanceClass]
+
+ClassParent = "com_weap_inf_thermaldetonator_ord"
+GeometryName = "lego_weap_thermaldetonator.msh"
+
+[Properties]
+
+GeometryName = "lego_weap_thermaldetonator"
+ExplosionExpire = "lego_grenade_exp"

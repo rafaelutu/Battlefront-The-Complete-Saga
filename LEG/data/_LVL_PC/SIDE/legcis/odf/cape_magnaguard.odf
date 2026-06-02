@@ -1,0 +1,7 @@
+[GameObjectClass]
+
+ClassParent = "cloth"
+
+[Properties]
+
+attachedmesh = "lego_magnaguard_caped2"

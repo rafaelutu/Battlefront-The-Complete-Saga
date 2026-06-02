@@ -1,0 +1,6 @@
+[WeaponClass]
+
+ClassParent = "lego_grenade"
+
+[Properties]
+

@@ -1,0 +1,2 @@
+-keep basenode aimer_head aimer_barrels barrel1 barrel2 
+-nocollision

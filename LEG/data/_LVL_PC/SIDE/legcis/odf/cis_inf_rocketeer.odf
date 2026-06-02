@@ -1,0 +1,13 @@
+[GameObjectClass]
+
+ClassParent = "cis_inf_default_rocketeer"
+GeometryName = "lego_battledroid_LP_bakcpack.msh"
+
+[Properties]
+
+GeometryName = "lego_battledroid_LP_bakcpack"
+GeometryLowRes = "lego_battledroid_lowrez"
+SkeletonName = "ldroi"
+SkeletonLowRes = "bdroidlz"
+FirstPerson = "CIS\cisbdrd;cis_1st_bdroid"
+OverrideTexture = "lego_bdroid_securtiy"

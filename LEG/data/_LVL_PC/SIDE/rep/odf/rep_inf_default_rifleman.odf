@@ -1,0 +1,23 @@
+[GameObjectClass]
+
+ClassParent = "rep_inf_default"
+
+[Properties]
+
+WeaponSection = 1
+WeaponName = "rep_weap_inf_rifle"
+WeaponAmmo = 4
+WeaponSection = 2
+WeaponName = "rep_weap_inf_pistol"
+WeaponAmmo = 0
+WeaponSection = 3
+WeaponName = "rep_weap_inf_thermaldetonator"
+WeaponAmmo = 4
+WeaponChannel = 1
+WeaponSection = 4
+WeaponName = "rep_weap_award_rifle"
+WeaponAmmo = 4
+WeaponSection = 5
+WeaponName = "rep_weap_award_pistol"
+WeaponAmmo = 6
+VOUnitType = 121

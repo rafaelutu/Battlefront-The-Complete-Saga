@@ -1,0 +1,37 @@
+[OrdnanceClass]
+
+ClassLabel = "bolt"
+
+[Properties]
+
+LaserLength = 20.0
+LaserWidth = 0.7
+GlowLength = 24
+BlurLength = 32
+FadeOutTime = 1
+ImpactEffectSoft = "com_sfx_explosion_leg_xs"
+ImpactEffectRigid = "com_sfx_explosion_leg_xs"
+ImpactEffectStatic = "com_sfx_explosion_leg_xs"
+ImpactEffectTerrain = "com_sfx_explosion_leg_xs"
+ImpactEffectWater = "com_sfx_watersplash_ord"
+ImpactEffectShield = "com_sfx_explosion_leg_xs"
+ExpireEffect = "com_sfx_explosion_leg_xs"
+LifeSpan = 0.15
+MaxDamage = 300.0
+Velocity = 2000.0
+Gravity = 1.0
+Rebound = 0.0
+VehicleScale = 0.1
+ShieldScale = 1.0
+PersonScale = 1.0
+DroidScale = 1.0
+BuildingScale = 0.1
+DamageTransitionDelay = 0.0
+DamageTransitionPeriod = 0.0
+DamageFinalDamage = -1.0
+FadeLightColor = 0
+EndLaserGlowColor = "0 0 0 0"
+EndLightColor = "0 0 0 0"
+OrdnanceSound = "com_weap_inf_ord_hum_sm"
+CollisionSound = "imp_weap_ord_exp"
+BonusAmplification = 0.25

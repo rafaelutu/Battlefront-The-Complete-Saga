@@ -1,0 +1,14 @@
+[GameObjectClass]
+
+ClassParent = "cis_inf_default_rifleman"
+GeometryName = "lego_super_battledroid_LP.msh"
+
+[Properties]
+
+UnitType = "trooper"
+GeometryName = "lego_super_battledroid_LP"
+GeometryLowRes = "lego_sbattledroid_low1"
+SkeletonName = "sbdroid"
+SkeletonLowRes = "sbdroidlz"
+FirstPerson = "CIS\cissbdrd;cis_1st_sbdroid"
+CollisionHeadOffset = "0.0 -0.2 0.0"

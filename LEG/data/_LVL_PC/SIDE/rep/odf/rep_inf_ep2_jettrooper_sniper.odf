@@ -1,0 +1,32 @@
+[GameObjectClass]
+
+ClassParent = "rep_inf_default_jettrooper"
+GeometryName = "rep_inf_jettrooper.msh"
+
+[Properties]
+
+Label = "Arc Trooper"
+UnitType = "trooper"
+IconTexture = "rep_htrooper_icon"
+GeometryName = "rep_inf_jettrooper"
+GeometryLowRes = "rep_inf_jettrooper_low1"
+FirstPerson = "REP\repjettp;rep_1st_jettrooper"
+MaxHealth = 300.0
+JetJump = 0.0
+JetPush = 0.0
+JetAcceleration = 0.0
+JetFuelRechargeRate = 0.0
+JetFuelCost = 1.0
+JetFuelInitialCost = 1.0
+JetFuelMinBorder = 1.04
+WeaponSection = 1
+WeaponName1 = "rep_weap_inf_sniper_rifle"
+WeaponAmmo1 = 7
+WeaponSection = 2
+WeaponName2 = "rep_weap_inf_pistol"
+WeaponAmmo2 = 0
+WeaponSection = 3
+WeaponName3 = "rep_weap_inf_thermaldetonator"
+WeaponAmmo3 = 2
+WeaponChannel3 = 1
+VOUnitType = 122

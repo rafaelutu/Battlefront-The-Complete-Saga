@@ -1,0 +1,51 @@
+[GameObjectClass]
+
+ClassParent = "com_inf_default"
+
+[Properties]
+
+ExplosionName = "cis_inf_droid_exp"
+HealthType = "droid"
+CollisionHeadOffset = "0.0 -0.11 0.05"
+ExplosionName = "cis_inf_droid_exp"
+ChunkFrequency = 0.6
+CHUNKSECTION = "CHUNK1"
+ChunkGeometryName = "lego_bdroid_chunk1"
+ChunkNodeName = "bone_neck"
+ChunkTerrainCollisions = 4
+ChunkTerrainEffect = "dirtspray"
+ChunkTrailEffect = "com_sfx_chunksmolder"
+ChunkPhysics = "FULL"
+ChunkOmega = "4.0 4.0 4.0"
+ChunkSpeed = 8.0
+CHUNKSECTION = "CHUNK2"
+ChunkGeometryName = "lego_bdroid_chunk2"
+ChunkNodeName = "bone_l_upperarm"
+ChunkTerrainCollisions = 4
+ChunkTerrainEffect = "dirtspray"
+ChunkTrailEffect = "com_sfx_chunksmolder"
+ChunkPhysics = "FULL"
+ChunkOmega = "4.0 4.0 4.0"
+ChunkSpeed = 8.0
+CHUNKSECTION = "CHUNK3"
+ChunkGeometryName = "lego_bdroid_chunk3"
+ChunkNodeName = "bone_l_calf"
+ChunkTerrainCollisions = 4
+ChunkTerrainEffect = "dirtspray"
+ChunkTrailEffect = "com_sfx_chunksmolder"
+ChunkPhysics = "FULL"
+ChunkOmega = "4.0 4.0 4.0"
+ChunkSpeed = 8.0
+CHUNKSECTION = "CHUNK4"
+ChunkGeometryName = "lego_bdroid_chunk4"
+ChunkNodeName = "bone_r_thigh"
+ChunkTerrainCollisions = 4
+ChunkTerrainEffect = "dirtspray"
+ChunkTrailEffect = "com_sfx_chunksmolder"
+ChunkPhysics = "FULL"
+ChunkOmega = "4.0 4.0 4.0"
+ChunkSpeed = 8.0
+HurtSound = "lim_unit_hurt_droid"
+DeathSound = "lim_unit_death_droid"
+DamageRegionSound = "lim_unit_hurt_droid"
+FoleyFXClass = "cis_inf_droid"

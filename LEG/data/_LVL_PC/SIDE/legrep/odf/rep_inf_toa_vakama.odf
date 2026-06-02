@@ -1,0 +1,11 @@
+[GameObjectClass]
+
+ClassParent = "rep_inf_default_rifleman"
+GeometryName = "toa_vakama.msh"
+
+[Properties]
+
+GeometryName = "toa_vakama"
+GeometryLowRes = "toa_vakama"
+FirstPerson = "REP\reptroop;rep_1st_trooper"
+SkeletonName = "bf3clones"

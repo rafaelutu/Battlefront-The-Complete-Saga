@@ -1,0 +1,13 @@
+[ExplosionClass]
+
+ClassLabel = "explosion"
+
+[Properties]
+
+WaterEffect = "com_sfx_watersplash_sm"
+Effect = "com_sfx_explosion_xs"
+Decal = "decal_explosion"
+LightColor = "16 32 242"
+LightRadius = 10.0
+LightDuration = 0.5
+SoundProperty = "com_weap_mine_expire"

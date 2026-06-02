@@ -1,0 +1,2 @@
+-keep rootnode aimer_head aimer_barrels gun2 gun1 
+-nocollision

@@ -1,0 +1,2 @@
+-keep rootnode aimer_y aimer_x barrel1 barrel2 
+-nocollision

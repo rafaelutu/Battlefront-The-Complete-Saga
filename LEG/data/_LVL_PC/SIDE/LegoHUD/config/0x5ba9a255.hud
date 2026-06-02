@@ -1,0 +1,2003 @@
+FileInfo("legocrosshair")
+{
+	Viewports(1);
+}
+
+Viewport("Transforms")
+{
+	EventNameFilter("player%");
+	TransformNumberColor("player1targetteamcolor")
+	{
+		NumberColor(0, 255, 255, 255);
+		NumberColor(1, 0, 0, 255);
+		NumberColor(2, 255, 0, 0);
+		EventInput("player1.weapon1.target.team");
+		EventOutput("player1.teamColor");
+	}
+
+	TransformNumberColor("player1energyfractioncolor")
+	{
+		NumberColor(0.100000, 31, 29, 31);
+		NumberColor(0.200000, 55, 50, 25);
+		NumberColor(0.300000, 80, 69, 23);
+		NumberColor(0.400000, 107, 91, 19);
+		NumberColor(0.500000, 136, 115, 18);
+		NumberColor(0.600000, 163, 137, 15);
+		NumberColor(0.700000, 185, 155, 7);
+		NumberColor(0.800000, 210, 175, 7);
+		NumberColor(0.900000, 230, 190, 2);
+		NumberColor(1, 255, 220, 0);
+		EventInput("player1.energyFraction");
+		EventOutput("player1.energyColor");
+	}
+
+}
+
+Group("player1healthbar")
+{
+	PropagateAlpha(1);
+	Viewport(1);
+	Position();
+	FadeInTime(0.500000);
+	FadeOutTime(0.500000);
+	EventEnable("player1.health");
+	EventDisable("player1.healthDisable");
+	Bitmap("player1charback")
+	{
+		Bitmap("hud_lego_charback");
+		Position();
+		BitmapRect();
+		Color(255, 255, 255);
+		Alpha(1);
+		ZOrder(2);
+		EventEnable("player1.healthFraction");
+		EventDisable("player1.healthDisable");
+	}
+
+	Bitmap("player1charicon")
+	{
+		Bitmap("hud_lego_charicon");
+		Position();
+		BitmapRect();
+		Color(255, 255, 255);
+		Alpha(0.800000);
+		ZOrder(1);
+		EventEnable("player1.healthFraction");
+		EventDisable("player1.healthDisable");
+	}
+
+	Bitmap("player1charteam")
+	{
+		Bitmap("hud_lego_charback_ring");
+		Position();
+		BitmapRect();
+		Color(33, 193, 0, 0);
+		Alpha(1);
+		ZOrder(1);
+		EventEnable("player1.healthFraction");
+		EventDisable("player1.healthDisable");
+	}
+
+	BarSegmented("player1health_fill")
+	{
+		Circular(0);
+		NumSegments(8);
+		Value(1);
+		EventValue("player1.healthFraction");
+		Rect();
+		Position();
+		PropagateAlpha(1);
+		Alpha(1);
+		Color(255, 0, 0);
+		ZOrder(0);
+		EventEnable("player1.healthFraction");
+		EventDisable("player1.healthDisable");
+		Segment("Segment")
+		{
+			Bitmap("hud_lego_healthbar");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+	BarSegmented("player1health_empty")
+	{
+		Circular(0);
+		NumSegments(8);
+		Value(1);
+		Rect();
+		Position();
+		PropagateAlpha(1);
+		Alpha(0.400000);
+		Color(255, 0, 0);
+		ZOrder(0);
+		EventEnable("player1.healthFraction");
+		EventDisable("player1.healthDisable");
+		Segment("Segment")
+		{
+			Bitmap("hud_lego_healthbar");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+	BarSegmented("player1shield_fill")
+	{
+		Circular(0);
+		NumSegments(4);
+		Value(1);
+		EventValue("player1.jetFuelFraction");
+		Rect();
+		Position();
+		PropagateAlpha(1);
+		Alpha(1);
+		Color(255, 255, 255);
+		ZOrder(0);
+		EventEnable("player1.jetFuelFraction");
+		EventDisable("player1.jetDisable");
+		Segment("Segment")
+		{
+			Bitmap("hud_lego_jetbar");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+	BarSegmented("player1shield_empty")
+	{
+		Circular(0);
+		NumSegments(4);
+		Value(1);
+		Rect();
+		Position();
+		PropagateAlpha(1);
+		Alpha(0.300000);
+		Color(255, 255, 255);
+		ZOrder(1);
+		EventEnable("player1.jetFuelFraction");
+		EventDisable("player1.jetDisable");
+		Segment("Segment")
+		{
+			Bitmap("hud_lego_jetbar");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+}
+
+Group("player1energybar")
+{
+	PropagateAlpha(1);
+	Viewport(1);
+	Position();
+	EventEnable("player1.energyFraction");
+	EventDisable("player1.energyDisable");
+	BarBitmap("player1energy_fill")
+	{
+		FlashyScale(1);
+		EventValue("player1.energyFraction");
+		Bitmap("hud_lego_stamina");
+		BitmapRect();
+		Position();
+		Scale(0.950000, 0.950000, 0.950000);
+		Alpha(0.800000);
+		ZOrder(0);
+		EventEnable("player1.energyFraction");
+		EventColor("player1.energyColor");
+		EventDisable("player1.energyDisable");
+		EventPulseRate("player1.energyRegenPulseRate");
+	}
+
+	Bitmap("player1energy_empty")
+	{
+		Bitmap("hud_lego_stamina_empty");
+		Position();
+		BitmapRect();
+		Color(255, 255, 255);
+		Scale(0.950000, 0.950000, 0.950000);
+		Alpha(0.500000);
+		ZOrder(1);
+		EventEnable("initialize");
+	}
+
+}
+
+Group("player1herobar")
+{
+	PropagateAlpha(1);
+	Viewport(1);
+	Position();
+	FadeInTime(0.500000);
+	FadeOutTime(0.500000);
+	EventEnable("player1.hero.healthFraction");
+	EventDisable("player1.hero.healthDisable");
+	Bitmap("hero1charback")
+	{
+		Bitmap("hud_lego_charback");
+		Position();
+		BitmapRect();
+		Color(255, 255, 255);
+		Alpha(1);
+		ZOrder(2);
+		EventEnable("player1.hero.healthFraction");
+		EventDisable("player1.hero.healthDisable");
+	}
+
+	Bitmap("hero1charicon")
+	{
+		Bitmap("hud_lego_charicon");
+		Position();
+		BitmapRect();
+		Color(255, 255, 255);
+		Alpha(0.800000);
+		ZOrder(1);
+		EventEnable("player1.hero.healthFraction");
+		EventDisable("player1.hero.healthDisable");
+	}
+
+	Bitmap("hero1charteam")
+	{
+		Bitmap("hud_lego_charback_ring");
+		Position();
+		BitmapRect();
+		Color(33, 193, 0, 0);
+		Alpha(1);
+		ZOrder(1);
+		EventEnable("player1.hero.healthFraction");
+		EventDisable("player1.hero.healthDisable");
+	}
+
+	BarSegmented("hero1health_fill")
+	{
+		Circular(0);
+		NumSegments(8);
+		Value(1);
+		EventValue("player1.hero.healthFraction");
+		Rect();
+		Position();
+		PropagateAlpha(1);
+		Alpha(1);
+		Color(255, 255, 255);
+		ZOrder(0);
+		EventEnable("player1.hero.healthFraction");
+		EventDisable("player1.hero.healthDisable");
+		Segment("Segment")
+		{
+			Bitmap("hud_lego_jetbar");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+	BarSegmented("hero1health_empty")
+	{
+		Circular(0);
+		NumSegments(8);
+		Value(1);
+		Rect();
+		Position();
+		PropagateAlpha(1);
+		Alpha(0.400000);
+		Color(255, 255, 255);
+		ZOrder(0);
+		EventEnable("player1.hero.healthFraction");
+		EventDisable("player1.hero.healthDisable");
+		Segment("Segment")
+		{
+			Bitmap("hud_lego_jetbar");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+}
+
+Group("player1targethealthbar")
+{
+	PropagateAlpha(1);
+	Viewport(1);
+	Alpha(0.500000);
+	Position();
+	EventEnable("initialize");
+	Bitmap("target1charback")
+	{
+		Bitmap("hud_lego_charback");
+		FlashyScale(1);
+		Position();
+		BitmapRect();
+		Color(255, 255, 255);
+		ZOrder(1);
+		FadeInTime(0.100000);
+		FadeOutTime(0.100000);
+		EventEnable("player1.weapon1.target.healthFraction");
+		EventDisable("player1.weapon1.target.disable");
+	}
+
+	Bitmap("target1charicon")
+	{
+		Bitmap("hud_lego_charicon");
+		FlashyScale(1);
+		Position();
+		BitmapRect();
+		Color(255, 255, 255);
+		ZOrder(0);
+		Alpha(1);
+		FadeInTime(0.100000);
+		FadeOutTime(0.100000);
+		EventEnable("player1.weapon1.target.healthFraction");
+		EventDisable("player1.weapon1.target.disable");
+	}
+
+	Bitmap("target1charteam")
+	{
+		Bitmap("hud_lego_charback_ring");
+		Position();
+		BitmapRect();
+		ZOrder(0);
+		FadeInTime(0.100000);
+		FadeOutTime(0.100000);
+		ColorChangeRate(0.100000);
+		EventEnable("player1.weapon1.target.healthFraction");
+		EventColor("player1.weapon1.target.teamColor");
+		EventDisable("player1.weapon1.target.disable");
+	}
+
+	BarSegmented("target1health_fill")
+	{
+		Circular(0);
+		NumSegments(8);
+		Value(1);
+		EventValue("player1.weapon1.target.healthFraction");
+		Rect();
+		Position();
+		Rotation(360, 180, 360);
+		PropagateAlpha(1);
+		Color(255, 0, 0);
+		ZOrder(1);
+		FadeInTime(0.100000);
+		FadeOutTime(0.100000);
+		EventEnable("player1.weapon1.target.healthFraction");
+		EventDisable("player1.weapon1.target.disable");
+		Segment("Segment")
+		{
+			Bitmap("hud_lego_healthbar_mirrored");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+	BarSegmented("target1health_empty")
+	{
+		Circular(0);
+		NumSegments(8);
+		Value(1);
+		Rect();
+		Position();
+		PropagateAlpha(1);
+		Alpha(0.400000);
+		Color(255, 0, 0);
+		ZOrder(2);
+		FadeInTime(0.100000);
+		FadeOutTime(0.100000);
+		EventEnable("player1.weapon1.target.healthFraction");
+		EventDisable("player1.weapon1.target.disable");
+		Segment("Segment")
+		{
+			Bitmap("hud_lego_healthbar");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+	BarSegmented("target1health_shield")
+	{
+		Circular(0);
+		NumSegments(8);
+		Value(1);
+		Rect();
+		Position();
+		PropagateAlpha(1);
+		Color(255, 0, 0);
+		ZOrder(0);
+		FadeInTime(0.100000);
+		FadeOutTime(0.100000);
+		EventEnable("player1.weapon1.target.shieldName");
+		EventDisable("player1.weapon1.target.disableShieldName");
+		Segment("Segment")
+		{
+			Bitmap("hud_lego_healthbar");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+	BarSegmented("target1shield_fill")
+	{
+		Circular(0);
+		NumSegments(4);
+		Value(1);
+		EventValue("player1.weapon1.target.healthFraction");
+		Rect();
+		Position();
+		Rotation(360, 180, 360);
+		PropagateAlpha(1);
+		Color(255, 255, 255);
+		ZOrder(1);
+		FadeInTime(0.100000);
+		FadeOutTime(0.100000);
+		EventEnable("player1.weapon1.target.shieldName");
+		EventDisable("player1.weapon1.target.disableShieldName");
+		Segment("Segment")
+		{
+			Bitmap("hud_lego_jetbar_mirrored");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+	BarSegmented("target1shield_empty")
+	{
+		Circular(0);
+		NumSegments(4);
+		Value(1);
+		Rect();
+		Position();
+		PropagateAlpha(1);
+		Alpha(0.300000);
+		Color(255, 255, 255);
+		ZOrder(1);
+		FadeInTime(0.100000);
+		FadeOutTime(0.100000);
+		EventEnable("player1.weapon1.target.shieldName");
+		EventDisable("player1.weapon1.target.disableShieldName");
+		Segment("Segment")
+		{
+			Bitmap("hud_lego_jetbar");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+	Text("target1name")
+	{
+		TextBreak("Word");
+		TextStyle("Shadow");
+		TextAlignment("Right", "Top");
+		TextFont("gamefont_lego_big");
+		EventText("player1.weapon1.target.className");
+		Viewport(1);
+		FadeInTime(0.100000);
+		FadeOutTime(0.100000);
+		Position();
+		ZOrder(1);
+		EventEnable("player1.weapon1.target.className");
+		EventDisable("player1.weapon1.target.disable");
+	}
+
+}
+
+Group("vehicle1healthbar")
+{
+	PropagateAlpha(1);
+	Viewport(1);
+	Position();
+	FadeInTime(0.500000);
+	FadeOutTime(0.500000);
+	EventEnable("player1.vehicle.health");
+	EventDisable("player1.vehicle.healthDisable");
+	Bitmap("vehicle1charback")
+	{
+		Bitmap("hud_lego_charback");
+		Position();
+		BitmapRect();
+		Color(255, 255, 255);
+		Alpha(1);
+		ZOrder(2);
+		EventEnable("player1.vehicle.healthFraction");
+		EventDisable("player1.vehicle.healthDisable");
+	}
+
+	Bitmap("vehicle1charicon")
+	{
+		Bitmap("hud_lego_vehicleicon");
+		Position();
+		BitmapRect();
+		Color(255, 255, 255);
+		Alpha(0.900000);
+		ZOrder(1);
+		EventEnable("player1.vehicle.healthFraction");
+		EventDisable("player1.vehicle.healthDisable");
+	}
+
+	Bitmap("vehicle1charteam")
+	{
+		Bitmap("hud_lego_charback_ring");
+		Position();
+		BitmapRect();
+		Color(33, 193, 0);
+		Alpha(1);
+		ZOrder(1);
+		EventEnable("player1.vehicle.healthFraction");
+		EventDisable("player1.vehicle.healthDisable");
+	}
+
+	BarSegmented("vehicle1health_fill")
+	{
+		Circular(0);
+		NumSegments(8);
+		Value(1);
+		EventValue("player1.vehicle.healthFraction");
+		Rect();
+		Position();
+		PropagateAlpha(1);
+		Alpha(1);
+		Color(255, 0, 0);
+		ZOrder(0);
+		EventEnable("player1.vehicle.healthFraction");
+		EventDisable("player1.vehicle.healthDisable");
+		Segment("Segment")
+		{
+			Bitmap("hud_lego_healthbar");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+	BarSegmented("vehicle1health_empty")
+	{
+		Circular(0);
+		NumSegments(8);
+		Value(1);
+		Rect();
+		Position();
+		PropagateAlpha(1);
+		Alpha(0.400000);
+		Color(255, 0, 0);
+		ZOrder(0);
+		EventEnable("player1.vehicle.healthFraction");
+		EventDisable("player1.vehicle.healthDisable");
+		Segment("Segment")
+		{
+			Bitmap("hud_lego_healthbar");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+}
+
+Group("player1vehicleseatinggroup")
+{
+	PropagateAlpha(1);
+	Position();
+	FadeInTime(0.250000);
+	FadeHoldTime(4);
+	FadeOutTime(0.250000);
+	EventEnable("player1.vehicle.seatingMesh");
+	EventDisable("player1.vehicle.healthDisable");
+	VehicleSeating("player1vehicleseating")
+	{
+		EventPlayerIndex("player1.index");
+		PropagateAlpha(1);
+		EventEnable("initialize");
+		Backdrop("Backdrop")
+		{
+		}
+
+		Empty("Empty")
+		{
+			Mesh("hud_lego_stud_silver");
+			Position();
+			Rotation(360, 360, 345);
+			Scale(0.300000, 0.300000, 0.300000);
+			Alpha(0.700000);
+		}
+
+		EmptyText("EmptyText")
+		{
+			TextBreak("Word");
+			TextFont("gamefont_lego_medium");
+			TextStyle("Shadow");
+			Alpha(0.500000);
+		}
+
+		self("Self")
+		{
+			Mesh("hud_lego_stud_gold");
+			Position();
+			Rotation(360, 360, 345);
+			Scale(0.300000, 0.300000, 0.300000);
+			Alpha(1);
+		}
+
+		SelfText("SelfText")
+		{
+			TextBreak("Word");
+			TextFont("gamefont_lego_medium");
+			TextStyle("Shadow");
+		}
+
+		Player("Player")
+		{
+			Mesh("hud_lego_stud_gold");
+			Position();
+			Rotation(360, 360, 345);
+			Scale(0.300000, 0.300000, 0.300000);
+			Alpha(1);
+		}
+
+		PlayerText("PlayerText")
+		{
+			TextBreak("Word");
+			TextFont("gamefont_lego_medium");
+			TextStyle("Shadow");
+			Alpha(0.500000);
+		}
+
+		AI("AI")
+		{
+			Mesh("hud_lego_stud_purple");
+			Position();
+			Rotation(360, 360, 345);
+			Scale(0.300000, 0.300000, 0.300000);
+			Alpha(1);
+		}
+
+		AIText("AIText")
+		{
+			TextBreak("Word");
+			TextFont("gamefont_lego_medium");
+			TextStyle("Shadow");
+			Alpha(0.500000);
+		}
+
+	}
+
+}
+
+Group("player1stats")
+{
+	PropagateAlpha(1);
+	Position();
+	Alpha(0.800000);
+	FadeHoldTime(5);
+	FadeOutTime(1);
+	EventEnable("player1.statistic.changed");
+	EventDisable("player1.statistic.disable");
+	Group("player1pointsgroup")
+	{
+		PropagateAlpha(1);
+		Position();
+		EventEnable("initialize");
+		Text("player1statspoints")
+		{
+			TextBreak("Word");
+			TextFont("gamefont_lego_medium");
+			EventNumber("player1.statistic.points");
+			Position();
+			ZOrder(5);
+			Alpha(0.700000);
+			Color(170, 250, 255);
+			EventEnable("player1.statistic.changed");
+			EventDisable("player1.statistic.disable");
+		}
+
+	}
+
+	Bitmap("player1statspoints.icon")
+	{
+		Bitmap("hud_lego_points");
+		BitmapRect();
+		Position();
+		EventEnable("player1.statistic.changed");
+		EventDisable("player1.statistic.disable");
+	}
+
+	Group("player1pointsdeltagroup")
+	{
+		PropagateAlpha(1);
+		Position();
+		EventEnable("initialize");
+		Text("player1statspointsDelta")
+		{
+			TextBreak("Word");
+			TextFont("gamefont_lego_medium");
+			EventText("player1.statistic.pointsDelta");
+			Position();
+			ZOrder(5);
+			Alpha(0.700000);
+			Color(170, 250, 255);
+			ColorPulseRate(0.750000);
+			EventEnable("player1.statistic.changed");
+			EventDisable("player1.statistic.disable");
+		}
+
+	}
+
+	Group("player1statskillsgroup")
+	{
+		PropagateAlpha(1);
+		Position();
+		EventEnable("initialize");
+		Text("player1statspoints")
+		{
+			TextBreak("Word");
+			TextFont("gamefont_lego_medium");
+			EventNumber("player1.statistic.kills");
+			Position();
+			ZOrder(5);
+			Alpha(0.700000);
+			Color(170, 250, 255);
+			EventEnable("player1.statistic.changed");
+			EventDisable("player1.statistic.disable");
+		}
+
+	}
+
+	Bitmap("player1statskills.icon")
+	{
+		Bitmap("hud_lego_kills");
+		BitmapRect();
+		Position();
+		EventEnable("player1.statistic.changed");
+		EventDisable("player1.statistic.disable");
+	}
+
+	Group("player1pointsdeltagroup")
+	{
+		PropagateAlpha(1);
+		Position();
+		EventEnable("initialize");
+		Text("player1statspointsDelta")
+		{
+			TextBreak("Word");
+			TextFont("gamefont_lego_medium");
+			EventText("player1.statistic.killsDelta");
+			Position();
+			ZOrder(5);
+			Alpha(0.700000);
+			Color(170, 250, 255);
+			ColorPulseRate(0.750000);
+			EventEnable("player1.statistic.changed");
+			EventDisable("player1.statistic.disable");
+		}
+
+	}
+
+}
+
+Group("player1teams")
+{
+	PropagateAlpha(1);
+	Position();
+	FadeInTime(3);
+	FadeOutTime(2);
+	EventEnable("initialize");
+	Group("player1team1_group")
+	{
+		Position();
+		Alpha(0.800000);
+		PropagateAlpha(1);
+		EventEnable("initialize");
+		Group("player1teams_team1pointsgroup")
+		{
+			Position();
+			EventEnable("initialize");
+			Bitmap("player1teams_team1stud")
+			{
+				Bitmap("hud_lego_stud1");
+				BitmapRect();
+				Position();
+				Rotation(360, 360, 345);
+				EventEnable("player1.team1.pointsText");
+				EventDisable("player1.team1.pointsDisable");
+			}
+
+			Text("player1teams_team1points")
+			{
+				TextBreak("Word");
+				TextAlignment("Center", "Bottom");
+				TextFont("gamefont_lego_big");
+				EventText("player1.team1.pointsText");
+				ZOrder(5);
+				Alpha(0.700000);
+				Color(170, 250, 255);
+				EventEnable("player1.team1.pointsText");
+				EventDisable("player1.team1.pointsDisable");
+			}
+
+		}
+
+		Group("player1teams_team1reinforcementsgroup")
+		{
+			Position();
+			EventEnable("initialize");
+			Bitmap("player1teams_team1stud")
+			{
+				Bitmap("hud_lego_stud1");
+				BitmapRect();
+				Position();
+				Rotation(360, 360, 345);
+				EventEnable("player1.team1.reinforcements");
+				EventDisable("player1.team1.reinforcementsDisable");
+			}
+
+			Text("player1teams_team1reinforcements")
+			{
+				TextBreak("Word");
+				TextAlignment("Center", "Bottom");
+				TextFont("gamefont_lego_big");
+				EventNumber("player1.team1.reinforcements");
+				ZOrder(5);
+				Alpha(0.700000);
+				Color(170, 250, 255);
+				EventEnable("player1.team1.reinforcements");
+				EventDisable("player1.team1.reinforcementsDisable");
+				EventPulseRate("player1.team1.bleedRate");
+			}
+
+		}
+
+	}
+
+	Group("player1team2_group")
+	{
+		Position();
+		Alpha(0.800000);
+		PropagateAlpha(1);
+		EventEnable("initialize");
+		Group("player1teams_team2pointsgroup")
+		{
+			Position();
+			EventEnable("initialize");
+			Bitmap("player1teams_team2stud")
+			{
+				Bitmap("hud_lego_stud2");
+				BitmapRect();
+				Position();
+				Rotation(360, 360, 345);
+				EventEnable("player1.team2.pointsText");
+				EventDisable("player1.team2.pointsDisable");
+			}
+
+			Text("player1teams_team1points")
+			{
+				TextBreak("Word");
+				TextAlignment("Center", "Bottom");
+				TextFont("gamefont_lego_big");
+				EventText("player1.team2.pointsText");
+				ZOrder(5);
+				Alpha(0.700000);
+				Color(170, 250, 255);
+				EventEnable("player1.team2.pointsText");
+				EventDisable("player1.team2.pointsDisable");
+			}
+
+		}
+
+		Group("player1teams_team2reinforcementsgroup")
+		{
+			Position();
+			EventEnable("initialize");
+			Bitmap("player1teams_team2stud")
+			{
+				Bitmap("hud_lego_stud2");
+				BitmapRect();
+				Position();
+				Rotation(360, 360, 345);
+				EventEnable("player1.team2.reinforcements");
+				EventDisable("player1.team2.reinforcementsDisable");
+			}
+
+			Text("player1teams_team2reinforcements")
+			{
+				TextBreak("Word");
+				TextAlignment("Center", "Bottom");
+				TextFont("gamefont_lego_big");
+				EventNumber("player1.team2.reinforcements");
+				ZOrder(5);
+				Alpha(0.700000);
+				Color(170, 250, 255);
+				EventEnable("player1.team2.reinforcements");
+				EventDisable("player1.team2.reinforcementsDisable");
+				EventPulseRate("player1.team2.bleedRate");
+			}
+
+		}
+
+	}
+
+	Bitmap("player1teams_line1")
+	{
+		Bitmap("white");
+		BitmapRect();
+		Position();
+		Alpha(0.700000);
+		Color(170, 250, 255);
+		EventEnable("player1.team1.reinforcements");
+		EventDisable("player1.team1.reinforcementsDisable");
+	}
+
+	Bitmap("player1teams_line2")
+	{
+		Bitmap("white");
+		BitmapRect();
+		Position();
+		Alpha(0.700000);
+		Color(170, 250, 255);
+		EventEnable("player1.team1.reinforcements");
+		EventDisable("player1.team1.reinforcementsDisable");
+	}
+
+	Bitmap("player1teams_line1")
+	{
+		Bitmap("white");
+		BitmapRect();
+		Position();
+		Alpha(0.700000);
+		Color(170, 250, 255);
+		EventEnable("player1.team1.pointsText");
+		EventDisable("player1.team1.pointsDisable");
+	}
+
+	Bitmap("player1teams_line2")
+	{
+		Bitmap("white");
+		BitmapRect();
+		Position();
+		Alpha(0.700000);
+		Color(170, 250, 255);
+		EventEnable("player1.team1.pointsText");
+		EventDisable("player1.team1.pointsDisable");
+	}
+
+}
+
+Group("player1weaponinformation")
+{
+	PropagateAlpha(1);
+	Viewport(1);
+	Position();
+	ZOrder(255);
+	EventEnable("player1.weaponsEnable");
+	EventDisable("player1.weaponsDisable");
+	Text("player1weapon1name")
+	{
+		TextBox(0.328125, 0);
+		TextBreak("Word");
+		TextFont("gamefont_lego_medium");
+		EventText("player1.weapon1.name");
+		Viewport(1);
+		Position();
+		ZOrder(5);
+		Alpha(0.700000);
+		Color(170, 250, 255);
+		FadeInTime(0.250000);
+		EventEnable("player1.weapon1.change");
+		EventDisable("player1.weapon1.disable");
+	}
+
+	Text("player1weapon1ammo")
+	{
+		TextBreak("Word");
+		TextFont("gamefont_lego_medium");
+		EventNumber("player1.weapon1.totalAmmoBullets");
+		InfiniteDashes(0);
+		Viewport(1);
+		Position();
+		Alpha(0.700000);
+		Color(170, 250, 255);
+		ZOrder(6);
+		FadeInTime(0.250000);
+		EventEnable("player1.weapon1.totalAmmoBullets");
+		EventDisable("player1.weapon1.disable");
+	}
+
+	Bitmap("player1weapon1infinite")
+	{
+		Bitmap("hud_lego_infinite");
+		BitmapRect();
+		Position();
+		Alpha(0.700000);
+		Color(170, 250, 255);
+		EventEnable("player1.weapon1.ammoInfinite");
+		EventDisable("player1.weapon1.disable");
+	}
+
+	Text("player1weapon2name")
+	{
+		TextBox(0.328125, 0);
+		TextBreak("Word");
+		TextFont("gamefont_lego_medium");
+		EventText("player1.weapon2.name");
+		Viewport(1);
+		Position();
+		ZOrder(5);
+		Alpha(0.700000);
+		Color(170, 250, 255);
+		FadeInTime(0.250000);
+		EventEnable("player1.weapon2.change");
+		EventDisable("player1.weapon2.disable");
+	}
+
+	Text("player1weapon2ammo")
+	{
+		TextBreak("Word");
+		TextFont("gamefont_lego_medium");
+		EventNumber("player1.weapon2.totalAmmoBullets");
+		InfiniteDashes(0);
+		Viewport(1);
+		Position();
+		Alpha(0.700000);
+		Color(170, 250, 255);
+		ZOrder(6);
+		FadeInTime(0.250000);
+		EventEnable("player1.weapon2.totalAmmoBullets");
+		EventDisable("player1.weapon2.disable");
+	}
+
+	Bitmap("player1weapon2infinite")
+	{
+		Bitmap("hud_lego_infinite");
+		BitmapRect();
+		Position();
+		Alpha(0.700000);
+		Color(170, 250, 255);
+		EventEnable("player1.weapon2.ammoInfinite");
+		EventDisable("player1.weapon2.disable");
+	}
+
+}
+
+Group("player1flags")
+{
+	PropagateAlpha(1);
+	Position();
+	EventEnable("initialize");
+	Bitmap("player1.flag.friend.carried")
+	{
+		Bitmap("hud_lego_flag_carrier");
+		BitmapRect();
+		Position();
+		Color(255, 100, 100);
+		Alpha(0.700000);
+		FadeInTime(0.500000);
+		FadeOutTime(0.200000);
+		EventEnable("player1.flag.friend.carried");
+		EventDisable("player1.flag.friend.carried.disable");
+	}
+
+	Bitmap("player1.flag.enemy.carried")
+	{
+		Bitmap("hud_lego_flag_carrier");
+		BitmapRect();
+		Position();
+		Color(34, 216, 255);
+		Alpha(0.700000);
+		FadeInTime(0.500000);
+		FadeOutTime(0.200000);
+		EventEnable("player1.flag.enemy.carried");
+		EventDisable("player1.flag.enemy.carried.disable");
+	}
+
+	Bitmap("player1.flag.friend.team.carried")
+	{
+		Bitmap("hud_lego_flag_carried");
+		BitmapRect();
+		Position();
+		Color(34, 216, 255);
+		Alpha(0.700000);
+		FadeInTime(0.500000);
+		FadeOutTime(0.200000);
+		EventEnable("player1.flag.friend.carried");
+		EventDisable("player1.flag.friend.carried.disable");
+	}
+
+	Bitmap("player1.flag.enemy.team.carried")
+	{
+		Bitmap("hud_lego_flag_carried");
+		BitmapRect();
+		Position();
+		Color(255, 100, 100);
+		Alpha(0.700000);
+		FadeInTime(0.500000);
+		FadeOutTime(0.200000);
+		EventEnable("player1.flag.enemy.carried");
+		EventDisable("player1.flag.enemy.carried.disable");
+	}
+
+	Bitmap("player1.flag.friend.dropped")
+	{
+		Bitmap("hud_lego_flag_dropped");
+		BitmapRect();
+		Position();
+		Color(34, 216, 255);
+		Alpha(0.700000);
+		FadeInTime(0.500000);
+		FadeOutTime(0.200000);
+		EventEnable("player1.flag.friend.dropped");
+		EventDisable("player1.flag.friend.dropped.disable");
+	}
+
+	Bitmap("player1.flag.enemy.dropped")
+	{
+		Bitmap("hud_lego_flag_dropped");
+		BitmapRect();
+		Position();
+		Color(255, 100, 100);
+		Alpha(0.700000);
+		FadeInTime(0.500000);
+		FadeOutTime(0.200000);
+		EventEnable("player1.flag.enemy.dropped");
+		EventDisable("player1.flag.enemy.dropped.disable");
+	}
+
+}
+
+Target("player1target")
+{
+	EventResetTargetCommon("targetResetCommon");
+	EventResetTargetPlayer("player1.targetResetPlayer");
+	FourSegmentLockOn(1);
+	EventPlayerIndex("player1.index");
+	EventEnable("player1.spawn");
+	EventDisable("player1.die");
+	FlagOnScreen("FlagOnScreen")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(0.300000);
+		MaxScale(0.100000);
+		Bitmap("hud_lego_flag");
+		BitmapRect();
+		Alpha(0.900000);
+	}
+
+	FlagOnScreenBehind("FlagOnScreenBehind")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(0.300000);
+		MaxScale(0.100000);
+		Bitmap("hud_lego_flag");
+		BitmapRect();
+		Alpha(0.300000);
+	}
+
+	FlagOffScreen("FlagOffScreen")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(0.800000);
+		MaxScale(0.500000);
+		Bitmap("hud_objective_icon_offscreen");
+		BitmapRect();
+	}
+
+	FlagOffScreenBehind("FlagOffScreenBehind")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(0.800000);
+		MaxScale(0.500000);
+		Bitmap("hud_objective_icon_offscreen");
+		BitmapRect();
+		Alpha(0.500000);
+	}
+
+	ObjectiveOnScreen("ObjectiveOnScreen")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(0.800000);
+		MaxScale(0.500000);
+		Bitmap("hud_objective_icon");
+		BitmapRect();
+	}
+
+	ObjectiveOnScreenBehind("ObjectiveOnScreenBehind")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(0.800000);
+		MaxScale(0.500000);
+		Bitmap("hud_objective_icon_hidden");
+		BitmapRect();
+		Alpha(0.900000);
+	}
+
+	ObjectiveOffScreen("ObjectiveOffScreen")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(1);
+		MaxScale(0.500000);
+		Bitmap("hud_objective_icon_offscreen");
+		BitmapRect();
+	}
+
+	ObjectiveOffScreenBehind("ObjectiveOffScreenBehind")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(1);
+		MaxScale(0.500000);
+		Bitmap("hud_objective_icon_offscreen");
+		BitmapRect();
+		Alpha(0.500000);
+	}
+
+	AttackerOnScreen("AttackerOnScreen")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(1);
+		MaxScale(0.250000);
+		Bitmap("hud_target_hint_onscreen");
+		BitmapRect();
+		Position();
+	}
+
+	AttackerOnScreenBehind("AttackerOnScreenBehind")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(1);
+		MaxScale(0.500000);
+		Bitmap("hud_target_hint_hidden");
+		BitmapRect();
+		Position();
+	}
+
+	AttackerOffScreen("AttackerOffScreen")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(1);
+		MaxScale(0.500000);
+		Bitmap("hud_target_hint_offscreen");
+		BitmapRect();
+		Alpha(0.500000);
+	}
+
+	AttackerOffScreenBehind("AttackerOffScreenBehind")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(1);
+		MaxScale(0.500000);
+		Bitmap("hud_target_hint_offscreen");
+		BitmapRect();
+		Alpha(0.500000);
+	}
+
+	LockedOnScreen("LockedOnScreen")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(3);
+		MaxScale(0);
+		Bitmap("hud_target_onscreen");
+		BitmapRect();
+		TexCoords(0, 0, 0.500000, 0.500000);
+		Color(255, 100, 100);
+	}
+
+	LockedOnScreenBehind("LockedOnScreenBehind")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(3);
+		MaxScale(0);
+		Bitmap("hud_target_hidden");
+		BitmapRect();
+		TexCoords(0, 0, 0.500000, 0.500000);
+		Alpha(0.600000);
+		Color(255, 100, 100);
+	}
+
+	LockedOffScreen("LockedOffScreen")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(1.600000);
+		MaxScale(1.400000);
+		Bitmap("hud_target_pointer_solid");
+		BitmapRect();
+		Color(255, 100, 100);
+	}
+
+	LockedOffScreenBehind("LockedOffScreenBehind")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(1.600000);
+		MaxScale(1.400000);
+		Bitmap("hud_target_pointer");
+		BitmapRect();
+		Color(255, 100, 100);
+	}
+
+	HintOnScreen("HintOnScreen")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(1);
+		MaxScale(0.500000);
+		Bitmap("hud_target_hint_onscreen");
+		BitmapRect();
+		Position();
+		Color(175, 0, 0);
+	}
+
+	HintOnScreenBehind("HintOnScreenBehind")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(1);
+		MaxScale(0.500000);
+		Bitmap("hud_target_hint_onscreen");
+		BitmapRect();
+		Position();
+		Alpha(0.400000);
+		Color(175, 0, 0);
+	}
+
+	HintOffScreen("HintOffScreen")
+	{
+		ColorFriendly(0, 0, 255);
+		Alpha(0);
+	}
+
+	HintOffScreenBehind("HintOffScreenBehind")
+	{
+		ColorFriendly(0, 0, 255);
+		Alpha(0);
+	}
+
+	HintFlagOnScreen("HintFlagOnScreen")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(1.400000);
+		MaxScale(1);
+		Bitmap("hud_lego_flag");
+		BitmapRect();
+		Position();
+		Alpha(0.800000);
+		Color(255, 100, 100);
+	}
+
+	HintFlagOnScreenBehind("HintFlagOnScreenBehind")
+	{
+		ColorFriendly(34, 216, 255);
+		MinScale(1.400000);
+		MaxScale(1);
+		Bitmap("hud_lego_flag");
+		BitmapRect();
+		Position();
+		Alpha(0.400000);
+		Color(255, 100, 100);
+	}
+
+	HintFlagOffScreen("HintFlagOffScreen")
+	{
+		ColorFriendly(0, 86, 213);
+		MinScale(1.200000);
+		MaxScale(0.900000);
+		Bitmap("hud_objective_icon_offscreen");
+		BitmapRect();
+		Color(255, 100, 100);
+	}
+
+	HintFlagOffScreenBehind("HintFlagOffScreenBehind")
+	{
+		ColorFriendly(0, 86, 213);
+		MinScale(1.200000);
+		MaxScale(0.900000);
+		Bitmap("hud_objective_icon_offscreen");
+		BitmapRect();
+		Alpha(0.500000);
+		Color(255, 100, 100);
+	}
+
+}
+
+Text("player1spawnvehicle")
+{
+	TextBox(0.384766, 0.500000);
+	TextBreak("Word");
+	TextFont("gamefont_lego_medium");
+	TextStyle("Shadow");
+	EventText("player1.spawnDisplay.vehicle");
+	Position();
+	ZOrder(0);
+	EventEnable("player1.spawnDisplay.enable");
+	EventDisable("player1.spawnDisplay.disable");
+}
+
+Text("player1spawninfo")
+{
+	TextBox(0.500000, 0.500000);
+	TextBreak("Word");
+	TextFont("gamefont_lego_medium");
+	TextStyle("Shadow");
+	EventText("player1.spawnDisplay.spawninfo");
+	Position();
+	ZOrder(0);
+	EventEnable("player1.spawnDisplay.enable");
+	EventDisable("player1.spawnDisplay.disable");
+}
+
+MultilineText("player1systemMessages")
+{
+	EventText("player1.message");
+	EventColor("player1.message.color");
+	NumLines(5);
+	DisplayTime(5);
+	AlwaysScroll(1);
+	AddToTop(1);
+	ScrollSpeed(4);
+	Rect();
+	PropagateAlpha(1);
+	Position();
+	ZOrder(0);
+	Alpha(0.700000);
+	EventEnable("player1.message");
+	EventDisable("player1.message.disable");
+	Format("Format")
+	{
+		TextBox(0.500000, 0.250000);
+		TextBreak("Word");
+		TextStyle("Shadow");
+		TextAlignment("Right", "Center");
+		TextFont("gamefont_lego_medium");
+		ZOrder(0);
+		Color(192, 192, 192);
+		FadeInTime(0.300000);
+		FadeOutTime(0.300000);
+	}
+
+}
+
+Group("player1.heroSelect")
+{
+	Position();
+	EventEnable("player1.heroSelect.message");
+	EventDisable("player1.heroSelect.disable");
+	Text("player1.heroSelectMessage")
+	{
+		TextBreak("Word");
+		TextStyle("Shadow");
+		TextAlignment("Center", "Top");
+		TextFont("gamefont_lego_medium");
+		EventText("player1.heroSelect.message");
+		Color(50, 180, 255);
+		EventEnable("initialize");
+	}
+
+	Text("player1.heroSelectTimer")
+	{
+		TextBreak("Word");
+		TextStyle("Shadow");
+		TextAlignment("Center", "Top");
+		TextFont("gamefont_lego_big");
+		EventNumber("player1.heroSelect.timer");
+		NumberToTime("%s");
+		Position();
+		Color(130, 25, 255);
+		EventEnable("initialize");
+	}
+
+}
+
+Group("player1SelectionPopupGroup")
+{
+	Position();
+	EventEnable("selectionPopup");
+	EventDisable("selectionPopup.disable");
+	Text("player1SelectionPopupText.popup_text")
+	{
+		TextBreak("Word");
+		TextStyle("Shadow");
+		TextFont("gamefont_small");
+		EventText("selectionPopup");
+		Position();
+		EventEnable("selectionPopup");
+		EventDisable("selectionPopup.disable");
+	}
+
+	Bitmap("player1SelectionPopupText.configAcceptDecline")
+	{
+		Bitmap("btn_directional_pad_LR");
+		BitmapRect();
+		Position();
+		EventEnable("selectionPopup");
+		EventDisable("selectionPopup.disable");
+	}
+
+	Text("player1SelectionPopupText.configAccept")
+	{
+		TextBreak("Word");
+		TextStyle("Shadow");
+		Text("ifs.controls.presets.A");
+		TextFont("gamefont_small");
+		Position();
+		EventEnable("selectionPopup");
+		EventDisable("selectionPopup.disable");
+	}
+
+	Text("player1SelectionPopupText.configDecline")
+	{
+		TextBreak("Word");
+		TextStyle("Shadow");
+		Text("ifs.controls.presets.B");
+		TextFont("gamefont_small");
+		Position();
+		EventEnable("selectionPopup");
+		EventDisable("selectionPopup.disable");
+	}
+
+}
+
+Map("player1map")
+{
+	PositionSmall();
+	PositionLarge();
+	PositionSpawn();
+	EventToggleMapMode("player1.map.modeToggle");
+	EventChangeMapMode("player1.map.mode");
+	EventPostHide("player1.map.hideCPs");
+	EventRefreshTarget("player1.map.refreshTarget");
+	EventRefreshPost("player1.map.refreshPost");
+	EventRefreshMarker("player1.map.refreshMarker");
+	AllowMiniMap(1);
+	EventPlayerIndex("player1.index");
+	PropagateAlpha(1);
+	Scale(0.820000, 0.820000, 0.820000);
+	ZOrder(127);
+	Alpha(0.750000);
+	EventEnable("player1.map.enable");
+	EventDisable("player1.map.disable");
+	BackdropSmall("BackdropSmall")
+	{
+		Mask("map_mask");
+		TexCoords(0.241913, 0.266924, 0.423919, 0.448930);
+		ZOrder(255);
+		Alpha(0.500000);
+	}
+
+	PlayerFOVSmall("PlayerFOVSmall")
+	{
+		Mesh("hud_lego_map_pointer");
+		Scale(0.930000, 0.930000, 0.930000);
+		ZOrder(123);
+	}
+
+	PlayerDirectionSmall("PlayerDirectionSmall")
+	{
+		Mesh("hud_lego_map_back");
+		ZOrder(130);
+		Alpha(0.500000);
+	}
+
+	TargetSmall("TargetSmall")
+	{
+		BitmapStyle("Shadow");
+		ZOrder(126);
+		Color(0, 0, 0);
+	}
+
+	PostSmall("PostSmall")
+	{
+		BitmapStyle("Shadow");
+	}
+
+	PostTextSmall("PostTextSmall")
+	{
+		TextBreak("Word");
+		TextFont("gamefont_lego_medium");
+		TextStyle("Shadow");
+		TextAlignment("Center", "Bottom");
+		ZOrder(127);
+	}
+
+	PostSelectSmall("PostSelectSmall")
+	{
+		Bitmap("hud_icon_flash");
+		BitmapStyle("Shadow");
+	}
+
+	MarkerSmall("MarkerSmall")
+	{
+		BitmapStyle("Shadow");
+		ZOrder(0);
+	}
+
+	NorthSmall("NorthSmall")
+	{
+		Bitmap("hud_map_northpointer");
+		BitmapStyle("Shadow");
+		Position();
+		Scale(2, 2, 2);
+		ZOrder(127);
+	}
+
+	BackdropLarge("BackdropLarge")
+	{
+		Mask("map_mask");
+		ZOrder(255);
+		Alpha(0.500000);
+	}
+
+	PlayerFOVLarge("PlayerFOVLarge")
+	{
+		Mesh("hud_large_map_fov");
+		ZOrder(0);
+		Alpha(0.500000);
+	}
+
+	PlayerDirectionLarge("PlayerDirectionLarge")
+	{
+		Mesh("hud_map_fov");
+		ZOrder(124);
+		Alpha(0.200000);
+		Color(255, 255, 0);
+	}
+
+	TargetLarge("TargetLarge")
+	{
+		BitmapStyle("Shadow");
+		ZOrder(254);
+		Color(0, 0, 0);
+	}
+
+	PostLarge("PostLarge")
+	{
+		BitmapStyle("Shadow");
+		ZOrder(0);
+	}
+
+	PostTextLarge("PostTextLarge")
+	{
+		TextBreak("Word");
+		TextFont("gamefont_lego_medium");
+		TextStyle("Shadow");
+		TextAlignment("Center", "Bottom");
+		ZOrder(127);
+	}
+
+	PostSelectLarge("PostSelectLarge")
+	{
+		Bitmap("hud_icon_flash");
+		BitmapStyle("Shadow");
+	}
+
+	MarkerLarge("MarkerLarge")
+	{
+		BitmapStyle("Shadow");
+		ZOrder(0);
+	}
+
+	NorthLarge("NorthLarge")
+	{
+		Bitmap("hud_map_northpointer");
+		BitmapStyle("Shadow");
+		Position();
+		Scale(5, 5, 5);
+		ZOrder(127);
+	}
+
+	BackdropSpawn("BackdropSpawn")
+	{
+		Mask("map_mask");
+		ZOrder(255);
+		Alpha(0.500000);
+	}
+
+	PlayerFOVSpawn("PlayerFOVSpawn")
+	{
+		ZOrder(123);
+	}
+
+	PlayerDirectionSpawn("PlayerDirectionSpawn")
+	{
+		ZOrder(124);
+	}
+
+	TargetSpawn("TargetSpawn")
+	{
+		BitmapStyle("Shadow");
+		ZOrder(126);
+		Color(0, 0, 0);
+	}
+
+	PostSpawn("PostSpawn")
+	{
+		BitmapStyle("Shadow");
+	}
+
+	PostTextSpawn("PostTextSpawn")
+	{
+		TextBreak("Word");
+		TextFont("gamefont_lego_medium");
+		TextStyle("Shadow");
+		TextAlignment("Center", "Bottom");
+		ZOrder(127);
+	}
+
+	PostSelectSpawn("PostSelectSpawn")
+	{
+		Bitmap("hud_icon_flash");
+		BitmapStyle("Shadow");
+	}
+
+	MarkerSpawn("MarkerSpawn")
+	{
+		BitmapStyle("Shadow");
+		ZOrder(0);
+	}
+
+	NorthSpawn("NorthSpawn")
+	{
+		Bitmap("hud_map_northpointer");
+		BitmapStyle("Shadow");
+		Position();
+		Scale(5, 5, 5);
+		ZOrder(127);
+	}
+
+}
+
+Group("player1reticule")
+{
+	EventPosition("player1.weapon1.reticule.position");
+	Position();
+	Alpha(1);
+	ZOrder(0);
+	EventEnable("player1.weapon1.reticule.position");
+	EventDisable("player1.weapon1.reticule.disable");
+	Model3D("player1reticule_shape")
+	{
+		Mesh("hud_ner_reticule");
+		Alpha(0.300000);
+		Color(255, 255, 255);
+		Scale(0.180000, 0.190000, 1);
+		FadeInTime(0.100000);
+		FadeOutTime(0.100000);
+		EventEnable("player1.weapon1.target.disable");
+		EventDisable("player1.weapon1.target.healthFraction");
+	}
+
+	Model3D("player1reticule_target")
+	{
+		Mesh("hud_ner_reticule_target");
+		Alpha(0.300000);
+		Color(255, 255, 255);
+		Scale(0.180000, 0.190000, 1);
+		FadeInTime(0.100000);
+		FadeOutTime(0.100000);
+		EventEnable("player1.weapon1.target.healthFraction");
+		EventDisable("player1.weapon1.target.disable");
+	}
+
+	Model3D("player1reticule_bullseye")
+	{
+		Mesh("hud_ner_reticule_bullseye");
+		Alpha(0.500000);
+		Color(255, 255, 255);
+		Scale(0.180000, 0.190000, 1);
+		EventEnable("initialize");
+	}
+
+	Model3D("player1reticule_hit")
+	{
+		Mesh("hud_ner_reticule_hit");
+		Lighting(0);
+		Alpha(0.600000);
+		Color(1, 86, 213);
+		ColorChangeRate(0.010000);
+		FadeHoldTime(0.330000);
+		Scale(0.180000, 0.190000, 1);
+		EventEnable("player1.weapon1.target.hit");
+		EventColor("player1.weapon1.target.hitColor");
+	}
+
+	Model3D("player1reticule_criticalhit")
+	{
+		Mesh("hud_ner_reticule_criticalhit");
+		Alpha(0.600000);
+		Color(239, 206, 21);
+		FadeHoldTime(0.600000);
+		FadeSustainTime(0.500000);
+		FadeOutTime(0.010000);
+		Scale(0.180000, 0.190000, 1);
+		EventEnable("player1.weapon1.target.hitCritical");
+	}
+
+	Bitmap("player1reticule_outline_right")
+	{
+		Bitmap("hud_ner_clipbar_empty_right");
+		Position();
+		BitmapRect();
+		Color(255, 255, 255);
+		Alpha(0.350000);
+		EventEnable("initialize");
+	}
+
+	Bitmap("player1reticule_outline_left")
+	{
+		Bitmap("hud_ner_clipbar_empty_left");
+		Position();
+		BitmapRect();
+		Color(255, 255, 255);
+		Alpha(0.350000);
+		EventEnable("initialize");
+	}
+
+	BarBitmap("player1heatbar_left")
+	{
+		FlashyIncFadeOutTime(0.100000);
+		FlashyDecFadeOutTime(0.100000);
+		EventValue("player1.weapon1.heat");
+		Bitmap("hud_ner_clipbar_left");
+		BitmapRect();
+		TexCoords(0, 0, 1, 1);
+		Position();
+		Rotation(360, 360, 270);
+		Color(255, 255, 255);
+		Alpha(0.450000);
+		EventEnable("player1.weapon1.heat");
+		EventDisable("player1.weapon1.disable");
+		EventColor("player1.weapon1.heatcolor");
+	}
+
+	BarBitmap("player1heatbar_right")
+	{
+		FlashyIncFadeOutTime(0.100000);
+		FlashyDecFadeOutTime(0.100000);
+		EventValue("player1.weapon1.heat");
+		Bitmap("hud_ner_clipbar_right");
+		BitmapRect();
+		TexCoords(0, 0, 1, 1);
+		Position();
+		Rotation(360, 360, 270);
+		Color(255, 255, 255);
+		Alpha(0.450000);
+		EventEnable("player1.weapon1.heat");
+		EventDisable("player1.weapon1.disable");
+		EventColor("player1.weapon1.heatcolor");
+	}
+
+	BarBitmap("player1clipbar_left")
+	{
+		FlashyIncFadeOutTime(0.100000);
+		FlashyDecFadeOutTime(0.100000);
+		EventValue("player1.weapon1.totalClipFraction");
+		Bitmap("hud_ner_clipbar_left");
+		BitmapRect();
+		TexCoords(0, 0, 1, 1);
+		Position();
+		Rotation(360, 360, 270);
+		Color(255, 255, 255);
+		Alpha(0.350000);
+		EventEnable("player1.weapon1.totalClipFraction");
+	}
+
+	BarBitmap("player1clipbar_right")
+	{
+		FlashyIncFadeOutTime(0.100000);
+		FlashyDecFadeOutTime(0.100000);
+		EventValue("player1.weapon1.totalClipFraction");
+		Bitmap("hud_ner_clipbar_right");
+		BitmapRect();
+		TexCoords(0, 0, 1, 1);
+		Position();
+		Rotation(360, 360, 270);
+		Color(255, 255, 255);
+		Alpha(0.350000);
+		EventEnable("player1.weapon1.totalClipFraction");
+	}
+
+	Text("player1weapon1overheat")
+	{
+		TextBreak("Word");
+		Text("game.weaponOverheat");
+		TextAlignment("Center", "Top");
+		TextFont("gamefont_lego_medium");
+		Position();
+		ZOrder(5);
+		Alpha(0.650000);
+		Color(239, 64, 21);
+		ColorPulseRate(0.750000);
+		FadeInTime(0.250000);
+		FadeHoldTime(0.100000);
+		FadeOutTime(1);
+		EventEnable("player1.weaponsOverheat");
+		EventDisable("player1.weaponsDisable");
+	}
+
+	BarSegmented("player1reticule_refire_left")
+	{
+		Circular(0);
+		NumSegments(2);
+		Value(1);
+		EventValue("player1.weapon1.refire");
+		Rect();
+		Position();
+		Rotation(360, 360, 180);
+		PropagateAlpha(1);
+		Alpha(0.450000);
+		Color(239, 64, 21);
+		EventEnable("player1.weapon1.refire");
+		EventDisable("player1.weapon1.disable");
+		Segment("Segment")
+		{
+			Bitmap("hud_ner_refire");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+	BarSegmented("player1reticule_refire_right")
+	{
+		Circular(0);
+		NumSegments(2);
+		Value(1);
+		EventValue("player1.weapon1.refire");
+		Rect();
+		Position();
+		PropagateAlpha(1);
+		Alpha(0.450000);
+		Color(239, 64, 21);
+		EventEnable("player1.weapon1.refire");
+		EventDisable("player1.weapon1.disable");
+		Segment("Segment")
+		{
+			Bitmap("hud_ner_refire");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+	BarSegmented("player1weapon2refirebar")
+	{
+		AngleStart(-30);
+		AngleEnd(45);
+		NumSegments(4);
+		Value(1);
+		EventValue("player1.weapon2.refire");
+		Rect();
+		PropagateAlpha(1);
+		Alpha(0.550000);
+		Position();
+		Scale(1, 1, 1);
+		ZOrder(0);
+		Color(177, 50, 0);
+		ColorChangeRate(0.100000);
+		EventEnable("player1.weapon2.refire");
+		EventDisable("player1.weapon2.disable");
+		Segment("Segment")
+		{
+			Bitmap("hud_ner_refire_secondary");
+			BitmapRect();
+			FadeInTime(0.050000);
+			FadeOutTime(0.100000);
+		}
+
+	}
+
+}
+

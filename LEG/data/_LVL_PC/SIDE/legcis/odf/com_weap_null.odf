@@ -1,0 +1,34 @@
+[WeaponClass]
+
+ClassLabel = "cannon"
+
+[Properties]
+
+ReticuleTexture = "reticule_rifle"
+HeatRecoverRate = 0.0
+HeatThreshold = 0.00
+HeatPerShot = 0.0
+RoundsPerClip = 0
+ReloadTime = 0
+ShotDelay = 5.0
+MinSpread = 0
+MaxSpread = 0
+AutoAimSize = 1
+LockOnRange = 40.0
+ShotsPerSalvo = 1
+InitialSalvoDelay = .1
+SalvoCount = 1
+SalvoDelay = .1
+MinRange = 0
+OptimalRange = 300
+MaxRange = 600
+ReticuleInAimingOnly = 1
+DisplayRefire = 0
+TargetEnemy = 0
+TargetNeutral = 0
+TargetFriendly = 0
+TargetPerson = 0
+TargetAnimal = 0
+TargetDroid = 0
+TargetVehicle = 0
+TargetBuilding = 0

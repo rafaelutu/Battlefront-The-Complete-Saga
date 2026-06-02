@@ -1,0 +1,6 @@
+[WeaponClass]
+
+ClassParent = "com_weap_inf_remotedroid_destruct"
+
+[Properties]
+

@@ -1,0 +1,12 @@
+[GameObjectClass]
+
+ClassParent = "rep_inf_default_sniper"
+GeometryName = "lego_clone_scout_low_poly_head.msh"
+
+[Properties]
+
+GeometryName = "lego_clone_scout_low_poly_head"
+GeometryLowRes = "rep_inf_ep3trooper_low1"
+FirstPerson = "REP\reptroop;rep_1st_trooper"
+OverrideTexture = "lego_clone_kashyyyk_scout"
+SkeletonName = "lego_human"

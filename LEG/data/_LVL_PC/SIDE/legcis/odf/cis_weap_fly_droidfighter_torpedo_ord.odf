@@ -1,0 +1,10 @@
+[OrdnanceClass]
+
+ClassParent = "com_weap_veh_fly_torpedo_ord"
+GeometryName = "com_weap_missile.msh"
+
+[Properties]
+
+ExplosionName = "cis_weap_fly_droidfighter_torpedo_exp"
+GeometryName = "com_weap_missile"
+MaxDamage = 800.0

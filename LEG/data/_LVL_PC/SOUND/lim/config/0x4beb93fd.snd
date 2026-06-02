@@ -1,0 +1,42 @@
+SoundProperties()
+{
+	Name("0x4113832d");
+	Group("Explosion");
+	Inherit("explosion_template");
+	MinDistance(25);
+	SampleList()
+	{
+		Sample("0x1a2ece62", 1);
+	}
+
+}
+
+SoundProperties()
+{
+	Name("0xc6e1eb54");
+	Group("Explosion");
+	Inherit("explosion_template");
+	MinDistance(25);
+	SampleList()
+	{
+		Sample("0xddf65461", 1);
+	}
+
+}
+
+SoundProperties()
+{
+	Name("0xbf630b81");
+	Group("Explosion");
+	Inherit("explosion_template");
+	MinDistance(50);
+	SampleList()
+	{
+		Sample("0xf6d9af01", 0.250000);
+		Sample("0xf3d9aa48", 0.250000);
+		Sample("0xf4d9abdb", 0.250000);
+		Sample("0xf9d9b3ba", 0.250000);
+	}
+
+}
+

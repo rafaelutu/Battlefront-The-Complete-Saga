@@ -1,0 +1,2 @@
+-keep aimer_y aimer_x 
+-nocollision

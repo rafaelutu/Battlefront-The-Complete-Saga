@@ -1,0 +1,6 @@
+[ExplosionClass]
+
+ClassParent = "com_weap_inf_remotedroid_exp1"
+
+[Properties]
+

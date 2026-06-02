@@ -1,0 +1,25 @@
+[WeaponClass]
+
+ClassParent = "com_weap_inf_wrist_rocket"
+
+[Properties]
+
+HUDTag = "hud_cis_wristrocket"
+OrdnanceName = "cis_weap_inf_wrist_rocket_ord"
+SniperScope = 1
+ZoomFirstPerson = 1
+ZoomMin = 3.0
+ZoomMax = 3.0
+ZoomRate = 0.0
+FireAnim = 1
+InitialSalvoDelay = 0.46
+InstantPlayFireAnim = 1
+Firesound = "cis_weap_inf_wrist_rocket_fire"
+ReloadSound = "com_weap_inf_equip_lg"
+ChangeModeSound = "com_weap_inf_equip_med"
+FireEmptySound = "com_weap_inf_ammo_empty"
+WeaponChangeSound = "com_weap_inf_equip_med"
+JumpSound = "com_weap_inf_rifle_mvt_jump"
+LandSound = "com_weap_inf_rifle_mvt_land"
+RollSound = "com_weap_inf_rifle_mvt_roll"
+SquatSound = "com_weap_inf_rifle_mvt_squat"

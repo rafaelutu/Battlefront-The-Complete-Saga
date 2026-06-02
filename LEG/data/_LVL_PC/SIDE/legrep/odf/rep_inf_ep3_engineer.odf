@@ -1,0 +1,12 @@
+[GameObjectClass]
+
+ClassParent = "rep_inf_default_engineer"
+GeometryName = "lego_clone_phase2_pilot_LP.msh"
+
+[Properties]
+
+GeometryName = "lego_clone_phase2_pilot_LP"
+GeometryLowRes = "rep_inf_ep3armoredpilot_low1"
+FirstPerson = "REP\reptroop;rep_1st_trooper"
+SkeletonName = "lego_human"
+OverrideTexture = "lego_clone_phase2_pilot"

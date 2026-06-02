@@ -1,0 +1,26 @@
+[GameObjectClass]
+
+ClassParent = "com_hero_default"
+GeometryName = "lego_padme_battle.msh"
+
+[Properties]
+
+GeometryName = "lego_padme_battle"
+GeometryLowRes = "lego_padme_battle"
+SkeletonName = "lego_human"
+FirstPerson = "all\allleia;all_1st_deathstarleia"
+WeaponSection = 1
+WeaponName = "rep_weap_padme_award_pistol"
+WeaponAmmo = 8
+WeaponSection = 3
+WeaponName = "rep_weap_inf_thermaldetonator"
+WeaponAmmo = 4
+WeaponChannel = 1
+WeaponSection = 4
+WeaponName = "rep_weap_inf_buff_defense"
+WeaponAmmo = 1
+WeaponChannel = 1
+VOUnitType = 121
+SoldierMusic = "all_hero_Leia_lp"
+HurtSound = "lim_hero_hurt_padme"
+DeathSound = "lim_hero_death_padme"

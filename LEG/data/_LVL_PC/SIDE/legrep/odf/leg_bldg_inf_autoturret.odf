@@ -1,0 +1,19 @@
+[GameObjectClass]
+
+ClassParent = "com_bldg_inf_autoturret"
+GeometryName = "lego_weap_miniturret.msh"
+
+[Properties]
+
+BuildingSection = "BODY"
+GeometryName = "lego_weap_miniturret"
+ExplosionName = "lsf_fx_stud_explosion"
+HealthType = "person"
+MaxHealth = 600
+BuildingSection = "TURRET1"
+TurretNodeName = "aimer_y"
+TURRETSECTION = "TURRET1"
+WeaponName = "leg_weap_inf_autoturret"
+WeaponAmmo = 0
+AimerNodeName = "aimer_x"
+FirePointName = "hp_fire"

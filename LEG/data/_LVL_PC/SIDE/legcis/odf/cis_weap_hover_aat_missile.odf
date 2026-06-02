@@ -1,0 +1,9 @@
+[WeaponClass]
+
+ClassParent = "com_weap_veh_missile"
+
+[Properties]
+
+OrdnanceName = "cis_weap_hover_aat_missile_ord"
+RoundsPerClip = 0
+Firesound = "cis_weap_hover_aat_missile_fire"

@@ -1,0 +1,15 @@
+[GameObjectClass]
+
+ClassParent = "rep_inf_default_rocketeer"
+GeometryName = "lego_clone_phase1_LP.msh"
+
+[Properties]
+
+UnitType = "assault"
+IconTexture = "rep_gunner_icon"
+GeometryName = "lego_clone_phase1_LP"
+FirstPerson = "REP\reparc;rep_1st_arctrooper"
+GeometryLowRes = "rep_inf_arctrooper_low1"
+OverrideTexture = "rep_inf_arc_blue"
+OverrideTexture2 = "rep_inf_arc_pack_blue"
+SkeletonName = "lego_human"

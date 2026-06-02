@@ -1,0 +1,14 @@
+[GameObjectClass]
+
+ClassParent = "rep_inf_default_officer"
+GeometryName = "lego_clone_phase2_commander_LP.msh"
+
+[Properties]
+
+GeometryName = "lego_clone_phase2_commander_LP"
+GeometryLowRes = "rep_inf_ep3trooper_low1"
+FirstPerson = "REP\reptroop;rep_1st_trooper"
+SkeletonName = "lego_coman"
+AnimatedAddon = "left_gun"
+GeometryAddon = "rep_weap_inf_pistol_L"
+AddonAttachJoint = "bone_L_hand"

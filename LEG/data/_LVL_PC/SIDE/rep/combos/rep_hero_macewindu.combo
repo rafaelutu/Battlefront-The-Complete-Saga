@@ -1,0 +1,725 @@
+OffhandAnimation("stand_useforce", "FIRE")
+{
+	Loop("FinalFrame");
+	AimType("Torso");
+	BlendInTime(0.150000);
+	BlendOutTime(0.150000);
+}
+
+OffhandAnimation("stand_useforce", "FIRE2");
+OffhandAnimation("stand_useforce", "CHARGE");
+Animation("stand_attack1a_end");
+Animation("stand_attack1b");
+Animation("stand_attack1a_upper")
+{
+	AimType("None");
+	BlendInTime(0);
+	BlendOutTime(0.150000);
+	BlendTimeTo("stand_attack1a_end");
+	BlendTimeTo("stand_attack1b");
+}
+
+Animation("stand_attack1a_lower")
+{
+	BlendInTime(0.150000);
+	BlendOutTime(0.150000);
+	BlendTimeTo("stand_attack1a_end");
+	BlendTimeTo("stand_attack1b");
+}
+
+ThrowAnimation("stand_throw");
+State("CATCH_SABRE")
+{
+	Posture("Stand");
+	Animation("stand_catch")
+	{
+		AimType("None");
+		BlendOutTime(0.200000);
+	}
+
+	InputLock("All", "!Thrust");
+	AlignedToThrust();
+}
+
+State("IDLE")
+{
+	Duration(0);
+	EnergyRestoreRate();
+	InputLock();
+	Transition("DEFLECT")
+	{
+		If()
+		{
+			Break();
+			Posture("Stand", "Crouch");
+			Energy(">=");
+			Button("FireSecondary", "Press");
+		}
+
+	}
+
+	Transition("BACK_ATTACK")
+	{
+		If()
+		{
+			Break();
+			Posture("Stand", "Crouch");
+			Button("Fire", "Press");
+			Thrust(">");
+			ThrustAngle(135, 225);
+		}
+
+	}
+
+	Transition("ATTACK1")
+	{
+		If()
+		{
+			Break();
+			Posture("Stand", "Crouch");
+			Button("Fire", "Press");
+		}
+
+	}
+
+	Transition("DASHATTACK")
+	{
+		If()
+		{
+			Break();
+			Posture("Sprint");
+			Button("Fire", "Press");
+		}
+
+	}
+
+	Transition("JUMPATTACK_FALL")
+	{
+		If()
+		{
+			Break();
+			Posture("Jump", "Jet");
+			Button("Fire", "Press");
+		}
+
+	}
+
+}
+
+State("DEFLECT")
+{
+	Posture("Stand");
+	Sound("imp_weap_lightsabre_block");
+	Animation("stand_block_idle")
+	{
+		Loop();
+		AimType("None");
+		BlendInTime(0.150000);
+		BlendOutTime(0.150000);
+		LowResPose("Frames", 0);
+	}
+
+	Duration(0);
+	InputLock();
+	EnergyRestoreRate(-10);
+	Deflect()
+	{
+		DeflectAngle(-110, 110);
+		EnergyCost(0);
+		DeflectAnimation("stand_block_front1", "Forward")
+		{
+			BlendInTime(0);
+			BlendOutTime(0.050000);
+			LowResPose("Frames", 0);
+		}
+
+		DeflectAnimation("stand_block_front2", "Forward")
+		{
+			BlendInTime(0);
+			BlendOutTime(0.050000);
+			LowResPose("Frames", 0);
+		}
+
+		DeflectAnimation("stand_block_left1", "Left")
+		{
+			BlendInTime(0);
+			BlendOutTime(0.050000);
+			LowResPose("Frames", 0);
+		}
+
+		DeflectAnimation("stand_block_left2", "Left")
+		{
+			BlendInTime(0);
+			BlendOutTime(0.050000);
+			LowResPose("Frames", 0);
+		}
+
+		DeflectAnimation("stand_block_right1", "Right")
+		{
+			BlendInTime(0);
+			BlendOutTime(0.050000);
+			LowResPose("Frames", 0);
+		}
+
+		DeflectAnimation("stand_block_right2", "Right")
+		{
+			BlendInTime(0);
+			BlendOutTime(0.050000);
+			LowResPose("Frames", 0);
+		}
+
+	}
+
+	Transition("ATTACK1")
+	{
+		If()
+		{
+			Break();
+			Button("Fire", "Press");
+		}
+
+	}
+
+	Transition("DEFLECT_ROLL")
+	{
+		EnergyCost(25);
+		If()
+		{
+			Break();
+			Button("Crouch", "Press");
+			Thrust(">");
+			ThrustAngle(-120, 120);
+		}
+
+	}
+
+	Transition("DEFLECT_CROUCH")
+	{
+		If()
+		{
+			Break();
+			Button("Crouch", "Press");
+		}
+
+	}
+
+	Transition("DEFLECT_JUMP")
+	{
+		If()
+		{
+			Break();
+			Button("Jump", "Press");
+		}
+
+	}
+
+	Transition("DEFLECT_SPRINT")
+	{
+		If()
+		{
+			Break();
+			Button("Sprint", "Down");
+		}
+
+	}
+
+	Transition("IDLE")
+	{
+		If()
+		{
+			Break();
+			Energy("<=");
+		}
+
+		Or()
+		{
+			Break("Frames", 0);
+			Button("FireSecondary", "Press");
+		}
+
+		Or()
+		{
+			Break();
+			Button("Reload", "Press");
+		}
+
+	}
+
+}
+
+State("DEFLECT_JUMP")
+{
+	Posture("Jump");
+	MustShowOneFrame();
+	Transition("IDLE")
+	{
+		If()
+		{
+			Break("Frames", 0);
+		}
+
+	}
+
+}
+
+State("DEFLECT_CROUCH")
+{
+	Posture("Crouch");
+	MustShowOneFrame();
+	Transition("IDLE")
+	{
+		If()
+		{
+			Break("Frames", 0);
+		}
+
+	}
+
+}
+
+State("DEFLECT_ROLL")
+{
+	Posture("Roll");
+	MustShowOneFrame();
+	Transition("IDLE")
+	{
+		If()
+		{
+			Break("Frames", 0);
+		}
+
+	}
+
+}
+
+State("DEFLECT_SPRINT")
+{
+	Posture("Sprint");
+	MustShowOneFrame();
+	Transition("IDLE")
+	{
+		If()
+		{
+			Break("Frames", 0);
+		}
+
+	}
+
+}
+
+State("BACK_ATTACK")
+{
+	Posture("Stand");
+	Animation("stand_attack_backwards")
+	{
+		BlendInTime(0.150000);
+		BlendOutTime(0.300000);
+	}
+
+	Sound("saber_swing");
+	InputLock("All", "!Thrust");
+	AlignedToThrust();
+	Attack()
+	{
+		DamageTime();
+		DamageLength(1.500000);
+		DamageWidth(0.750000);
+		Damage(400);
+		Push(6);
+	}
+
+	Attack()
+	{
+		DamageTime();
+		DamageLength(1.500000);
+		DamageWidth(0.750000);
+		Damage(400);
+		Push(6);
+	}
+
+	Transition("IDLE");
+}
+
+Animation("stand_attack1b_end");
+Animation("stand_attack1c");
+State("ATTACK1")
+{
+	Posture("Stand");
+	Animation("stand_attack1a");
+	Sound("saber_swing");
+	InputLock("All", "!Thrust");
+	AlignedToThrust();
+	Attack()
+	{
+		DamageTime();
+		DamageLength(1.500000);
+		DamageWidth(0.750000);
+		Damage(300);
+		Push(3);
+	}
+
+	Transition("ATTACK2")
+	{
+		If()
+		{
+			TimeStart("Frames", 0);
+			TimeEnd("Frames", 0);
+			Posture("Stand");
+			Button("Fire", "Press");
+		}
+
+	}
+
+	Transition("RECOVER1");
+}
+
+State("RECOVER1")
+{
+	Posture("Stand");
+	Animation("stand_attack1a_end")
+	{
+		AimType("None");
+		BlendInTime(0.150000);
+		BlendOutTime(0.150000);
+	}
+
+	InputLock("All", "!Thrust");
+	AlignedToThrust();
+	Transition("IDLE");
+}
+
+State("ATTACK2")
+{
+	Posture("Stand");
+	Animation("stand_attack1b")
+	{
+		AimType("None");
+		BlendInTime(0.060000);
+		BlendOutTime(0.150000);
+		BlendTimeTo("stand_attack1b_end");
+		BlendTimeTo("stand_attack1c");
+	}
+
+	Sound("saber_swing");
+	InputLock("All", "!Thrust");
+	AlignedToThrust();
+	Attack()
+	{
+		AttackId("MaceA2");
+		DamageTime();
+		DamageLength(1.500000);
+		DamageWidth(0.750000);
+		Damage(300);
+		Push(3);
+	}
+
+	Transition("ATTACK3")
+	{
+		If()
+		{
+			TimeStart("Frames", 0);
+			TimeEnd("Frames", 0);
+			Posture("Stand");
+			Button("Fire", "Press");
+		}
+
+	}
+
+	Transition("RECOVER2");
+}
+
+State("RECOVER2")
+{
+	Posture("Stand");
+	Animation("stand_attack1b_end")
+	{
+		AimType("None");
+		BlendInTime(0.150000);
+		BlendOutTime(0.150000);
+	}
+
+	Attack()
+	{
+		AttackId("MaceA2");
+		DamageTime();
+		DamageLength(1.500000);
+		DamageWidth(0.750000);
+		Damage(300);
+		Push(3);
+	}
+
+	Transition("ATTACK3")
+	{
+		If()
+		{
+			TimeStart(0);
+			TimeEnd("Frames", 0);
+			Posture("Stand");
+			Button("Fire", "Press");
+		}
+
+	}
+
+	InputLock("All", "!Thrust");
+	AlignedToThrust();
+	Transition("IDLE");
+}
+
+State("ATTACK3")
+{
+	Posture("Stand");
+	Animation("stand_attack1c")
+	{
+		AimType("None");
+		BlendInTime(0.060000);
+		BlendOutTime(0.150000);
+	}
+
+	Sound("saber_attack_three", "Frames");
+	Duration("Frames", 0);
+	AnimatedMove(0, -9223372036854775808, -9223372036854775808, 0, 0, 0, -9223372036854775808)
+	{
+		VelocityZ(0);
+		VelocityX(0);
+		VelocityFromThrust(8);
+		VelocityFromStrafe(3);
+	}
+
+	AlignedToThrust();
+	TurnFactor(0.500000);
+	InputLock("All", "!Thrust");
+	Attack()
+	{
+		DamageTime();
+		DamageLength(1.500000);
+		DamageWidth(0.750000);
+		Damage(600);
+		Push(5);
+	}
+
+	Attack()
+	{
+		AttackId("MaceA3");
+		DamageTime();
+		DamageLength(1.500000);
+		DamageWidth(0.750000);
+		Damage(600);
+		Push(5);
+	}
+
+	Transition("ATTACK3_LAND");
+}
+
+State("ATTACK3_LAND")
+{
+	Posture("Stand");
+	Animation("stand_attack1c")
+	{
+		AimType("None");
+		BlendInTime(0.060000);
+		BlendOutTime(0.150000);
+	}
+
+	Sound("saber_attack_three");
+	AnimatedMove(0, -9223372036854775808, -9223372036854775808, 0, 0, 0, -9223372036854775808)
+	{
+		VelocityZ(0);
+		VelocityX(0);
+		VelocityFromThrust(0.500000);
+		VelocityFromStrafe(0.500000);
+		Until()
+		{
+			Break("Frames", 0);
+		}
+
+	}
+
+	AlignedToThrust();
+	TurnFactor(0.500000);
+	InputLock("All", "!Thrust");
+	Attack()
+	{
+		AttackId("MaceA3");
+		DamageTime();
+		DamageLength(1.500000);
+		DamageWidth(0.750000);
+		Damage(600);
+		Push(5);
+	}
+
+	Transition("IDLE");
+}
+
+State("DASHATTACK")
+{
+	Posture("Stand");
+	Animation("stand_dashattack")
+	{
+		AimType("FullBody");
+		BlendInTime(0.100000);
+		BlendOutTime(0.250000);
+	}
+
+	Sound("saber_swing");
+	AnimatedMove()
+	{
+		VelocityZ(17);
+		VelocityX(0);
+		VelocityFromThrust(5);
+		VelocityFromStrafe(1);
+	}
+
+	TurnFactor(0.300000);
+	Duration("Frames", 0);
+	InputLock("All", "!Thrust");
+	Attack()
+	{
+		DamageTime();
+		DamageLength(1.500000);
+		DamageWidth(0.750000);
+		Damage(400);
+		Push(3);
+	}
+
+	Transition("DASHATTACK2");
+}
+
+State("DASHATTACK2")
+{
+	Posture("Stand");
+	Animation("stand_dashattack")
+	{
+		AimType("FullBody");
+		BlendInTime(0.100000);
+		BlendOutTime(0.250000);
+	}
+
+	Sound("saber_swing");
+	AnimatedMove()
+	{
+		VelocityZ(0);
+		VelocityX(0);
+		VelocityFromThrust(0);
+		VelocityFromStrafe(0);
+	}
+
+	TurnFactor(0.300000);
+	InputLock("All");
+	Attack()
+	{
+		DamageTime();
+		DamageLength(1.500000);
+		DamageWidth(0.750000);
+		Damage(400);
+		Push(5);
+	}
+
+	Transition("ATTACK2")
+	{
+		If()
+		{
+			Break("Frames", 0);
+			TimeStart(0);
+			TimeEnd("FromEnd", 0);
+			Posture("Stand");
+			Button("Fire", "Press");
+		}
+
+	}
+
+	Transition("IDLE");
+}
+
+Animation("jumpattack_land");
+State("JUMPATTACK_FALL")
+{
+	Posture("Jump");
+	Animation("jumpattack_fall")
+	{
+		Loop("FinalFrame");
+		AimType("None");
+		BlendInTime(0.150000);
+		BlendOutTime(0.150000);
+	}
+
+	Sound("com_weap_throw");
+	Duration(0);
+	EnergyRestoreRate(0);
+	Gravity(4);
+	GravityVelocityTarget(-20);
+	AnimatedMove();
+	InputLock("All", "!Thrust");
+	Transition("JUMPATTACK_LAND")
+	{
+		If()
+		{
+			Break();
+			Posture("Stand");
+		}
+
+	}
+
+	Transition("IDLE")
+	{
+		If()
+		{
+			Break();
+			Posture("Any", "!Stand", "!Jump", "!Jet");
+		}
+
+	}
+
+}
+
+State("JUMPATTACK_LAND")
+{
+	Posture("Stand");
+	Animation("jumpattack_land")
+	{
+		AimType("FullBody");
+		BlendInTime(0);
+		BlendOutTime(0.200000);
+	}
+
+	Attack()
+	{
+		AttackId("Earthquake");
+		DamageTime();
+		DamageLength(1);
+		DamageWidth(0.500000);
+		Damage(1200);
+	}
+
+	RestartAnimation();
+	Duration("Frames", 0);
+	EnergyRestoreRate(0);
+	AnimatedMove();
+	InputLock("All");
+	Transition("JUMPATTACK_LAND2");
+}
+
+State("JUMPATTACK_LAND2")
+{
+	Posture("Stand");
+	Attack()
+	{
+		AttackId("Earthquake");
+		DamageTime();
+		DamageLength(1.500000);
+		DamageWidth(0.500000);
+		Damage(0);
+	}
+
+	Animation("jumpattack_land")
+	{
+		AimType("FullBody");
+		BlendInTime(0);
+		BlendOutTime(0.200000);
+	}
+
+	EnergyRestoreRate(0);
+	PlayExplosion();
+	AnimatedMove();
+	InputLock("All");
+}
+

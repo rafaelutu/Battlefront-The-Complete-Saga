@@ -1,0 +1,11 @@
+[GameObjectClass]
+
+ClassParent = "com_weap_inf_detpack_ord"
+GeometryName = "lego_weap_detpack.msh"
+
+[Properties]
+
+GeometryName = "lego_weap_detpack"
+ExplosionTrigger = "rep_weap_inf_detpack_exp"
+ExplosionExpire = "rep_weap_inf_detpack_destroyed_exp"
+ExplosionDeath = "rep_weap_inf_detpack_destroyed_exp"

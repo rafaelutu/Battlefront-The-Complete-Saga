@@ -1,0 +1,49 @@
+[GameObjectClass]
+
+ClassParent = "rep_inf_default"
+
+[Properties]
+
+MaxHealth = 300.0
+PointsToUnlock = 12
+UnitType = "trooper"
+AISizeType = "HOVER"
+ControlSpeed = "jet    1.50 1.25 1.25"
+JetJump = 5.0
+JetPush = 8.0
+JetAcceleration = 30.0
+JetEffect = "rep_sfx_jetpack"
+JetType = "hover"
+JetFuelRechargeRate = 0.12
+JetFuelCost = 0.16
+JetFuelInitialCost = 0.25
+JetFuelMinBorder = 0.24
+CAMERASECTION = "STAND"
+EyePointOffset = "0.0 1.8 0.0"
+TrackCenter = "0.0 1.8 0.0"
+TrackOffset = "0.0 0.0 3.5"
+TiltValue = 7.5
+CAMERASECTION = "CROUCH"
+EyePointOffset = "0.0 1.3 0.0"
+TrackCenter = "0.0 1.3 0.0"
+TrackOffset = "0.0 0.15 3.5"
+TiltValue = 7.5
+WeaponSection = 1
+WeaponName = "rep_weap_inf_emp_launcher"
+WeaponAmmo = 4
+WeaponSection = 2
+WeaponName = "rep_weap_inf_commando_pistol"
+WeaponAmmo = 0
+WeaponSection = 3
+WeaponName = "rep_weap_inf_thermaldetonator"
+WeaponAmmo = 4
+WeaponChannel = 1
+WeaponSection = 4
+WeaponName = "rep_weap_award_pistol"
+WeaponAmmo = 6
+CollisionScale = "0.0 0.0 0.0"
+EngineSound = "rep_inf_Jetpack_engine_parameterized"
+TurnOnSound = "rep_weap_jetpack_turnon"
+TurnOffSound = "rep_weap_jetpack_turnoff"
+TurnOffTime = 0.0
+VOUnitType = 121

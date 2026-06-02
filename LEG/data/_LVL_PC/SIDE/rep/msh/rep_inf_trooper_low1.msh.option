@@ -1,0 +1,2 @@
+-keepmaterial override_texture 
+-nocollision

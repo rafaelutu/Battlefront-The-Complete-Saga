@@ -1,0 +1,31 @@
+[GameObjectClass]
+
+ClassLabel = "commandpost"
+GeometryName = "rep_bldg_forwardcenter.msh"
+
+[Properties]
+
+DenyFlyerLand = 1
+SwitchClassRadius = 15.0
+BuildingSection = "BODY"
+Label = "Control Zone"
+MapTexture = "hud_dest_icon"
+MapScale = 3.0
+HealthTexture = "HUD_rep_forward_comm_icon"
+GeometryName = "rep_bldg_forwardcenter"
+DestroyedGeometryName = "rep_bldg_forwardcenter_dest"
+MaxHealth = 30000.0
+ExplosionDestruct = "rep_bldg_forwardcenter_exp"
+vehiclecollision = "p_vehiclecylinder1"
+vehiclecollision = "p_vehiclecylinder2"
+SoldierCollision = "CollisionMesh"
+Ordnancecollision = "CollisionMesh"
+CHUNKSECTION = "CHUNK1"
+ChunkGeometryName = "rep_bldg_forwardcenter_chunk1"
+ChunkTerrainCollisions = 0
+ChunkTerrainEffect = "com_sfx_explosion_lg"
+ChunkTrailEffect = "com_sfx_chunktrail_sm"
+ChunkPhysics = "FULL"
+ChunkOmega = "2.0 2.0 2.0"
+ChunkSpeed = 12.0
+ChunkUpFactor = 4.00

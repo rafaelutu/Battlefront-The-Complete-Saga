@@ -1,0 +1,58 @@
+[WeaponClass]
+
+ClassParent = "areaeffectweapon"
+
+[Properties]
+
+HUDTag = "hud_force_choke"
+FlashColor = "80 80 255 255"
+FlashLength = 0.025
+FlashLightColor = "220 220 255 175"
+Discharge = "med_smoke_effect"
+RoundsPerClip = 0
+ReloadTime = 0.0
+HeatPerShot = 0.0
+HeatRecoverRate = 0.2
+HeatThreshold = 0.01
+DisplayRefire = 0
+EnergyDrain = 40.0
+EnergyDrainRate = 15.0
+FireType = "Hold"
+InitialSalvoDelay = 0.5
+MaxTargets = 1
+AreaType = "Ray"
+AreaRange = 20.0
+AreaRadius = 10.0
+AreaHeight = 4.0
+EffectDamage = 150.0
+EffectType = "Choke"
+EffectStrength = 10.0
+EffectFalloff = 1.0
+ThrustFactor = 0.5
+SoldierAnimation = "choking"
+OffhandWeapon = 1
+InstantPlayFireAnim = 1
+TriggerSingle = 1
+LockOnRange = 64.0
+LockTime = 0.0
+AutoAimSize = 2.0
+TargetEnemy = 1
+TargetNeutral = 0
+TargetFriendly = 0
+TargetPerson = 1
+TargetAnimal = 1
+TargetDroid = 1
+TargetVehicle = 0
+TargetBuilding = 0
+ChargeRateLight = 1.0
+MaxChargeStrengthLight = 1.0
+ChargeDelayLight = 0.0
+ChargeRateHeavy = 1.0
+MaxChargeStrengthHeavy = 0.5
+ChargeDelayHeavy = 2.2
+RecoilLengthHeavy = 0.25
+RecoilStrengthHeavy = 2
+RecoilDecayHeavy = 0.0
+Firesound = "force_choke_fire"
+ChargeSoundPitch = 0.05
+OverheatSoundPitch = 0.5

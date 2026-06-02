@@ -1,0 +1,7 @@
+[WeaponClass]
+
+ClassParent = "com_weap_inf_detpack"
+
+[Properties]
+
+OrdnanceName = "rep_weap_inf_detpack_ord"

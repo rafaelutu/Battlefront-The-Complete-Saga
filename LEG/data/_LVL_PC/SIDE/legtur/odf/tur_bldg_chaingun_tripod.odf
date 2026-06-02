@@ -1,0 +1,42 @@
+[GameObjectClass]
+
+ClassLabel = "armedbuilding"
+GeometryName = "com_bldg_chaingun_tripod.msh"
+
+[Properties]
+
+BuildingSection = "BODY"
+MapTexture = "turret_icon"
+PilotType = "self"
+MapScale = 1.2
+GeometryName = "com_bldg_chaingun_tripod"
+DestroyedGeometryName = "com_bldg_chaingun_tripod_dest"
+ExplosionName = "com_inf_rechargedroid_exp"
+MaxHealth = 200.0
+RespawnTime = 999999.9
+BuildingSection = "TURRET1"
+PilotType = "self"
+TurretNodeName = "aimer_gun"
+PitchLimits = "-30 20"
+YawLimits = "-180 180"
+PitchTurnFactor = 0.0
+ThirdPersonFOV = 65
+WeaponName = "tur_weap_chaingun_auto"
+WeaponAmmo = 0
+MaxTurnSpeed = 5.0
+MaxPitchSpeed = 5.0
+PCMaxPitchSpeed = 5.0
+PCMaxTurnSpeed = 5.0
+TurretYawSound = "turret_whir_yaw_lp defer"
+TurretYawSoundPitch = 0.7
+TurretPitchSound = "turret_whir_pitch_lp defer"
+TurretPitchSoundPitch = 0.7
+TurretActivateSound = "vehicle_equip defer"
+TurretDeactivateSound = "vehicle_equip defer"
+DamageStartPercent = 50.0
+DamageStopPercent = 30.0
+DamageEffect = "com_sfx_vehiclespark"
+DamageStartPercent = 30.0
+DamageStopPercent = 0.0
+DamageEffect = "com_sfx_smokeplume"
+DamageAttachPoint = "hp_smoke_1"

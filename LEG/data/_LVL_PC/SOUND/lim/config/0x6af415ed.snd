@@ -1,0 +1,456 @@
+SoundProperties()
+{
+	Name("0x2588238");
+	Group("0x4018c961");
+	Inherit("pain_chatter_template");
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x8607ecd4", 1);
+	}
+
+}
+
+SoundProperties()
+{
+	Name("0xbe7d1ce0");
+	Group("0x4018c961");
+	Inherit("pain_chatter_template");
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0xb4a2f7d3", 1);
+	}
+
+}
+
+SoundProperties(-0.012732, 0, 0, 0, -9223372036854775808, 0, -499598783152128, 0)
+{
+	Name("0x72a8d830");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	Gain(2);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x1a3db5cf", 1);
+	}
+
+}
+
+SoundProperties(-0.012732, 0, 0, 0, -9223372036854775808, 0, -499598783152128, 0)
+{
+	Name("0xddada355");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	Gain(2);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x43b7c942", 1);
+	}
+
+}
+
+SoundProperties(-0.012732, 0, 0, 0, -9223372036854775808, 0, -499598783152128, 0)
+{
+	Name("0x270ba4fd");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	Gain(2);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x1c8a34dc", 0.300000);
+		Sample("0xbfc87106", 0.700000);
+	}
+
+}
+
+SoundProperties(-0.012732, 0, 0, 0, -9223372036854775808, 0, -499598783152128, 0)
+{
+	Name("0x81458ddb");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	Gain(2);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x8607ecd4", 0.200000);
+		Sample("0x822b9f04", 0.800000);
+	}
+
+}
+
+SoundProperties()
+{
+	Name("0x7be98756");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	PlayProbability(0.850000);
+	Gain(2);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x7d6aaa13", 1);
+	}
+
+}
+
+SoundProperties(0, -0.041196)
+{
+	Name("0x65a3630b");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	Gain(2);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x3683eb05", 1);
+	}
+
+}
+
+SoundProperties(0, -9223372036854775808)
+{
+	Name("0x5a826432");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	PlayProbability(0.850000);
+	Gain(2);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x3c56dc60", 1);
+	}
+
+}
+
+SoundProperties(-0.012732, 0, 0, 0, -9223372036854775808, 0, -499598783152128, 0)
+{
+	Name("0x56b4fff9");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x8607ecd4", 0.300000);
+		Sample("0xcf9adc6a", 0.700000);
+	}
+
+}
+
+SoundProperties()
+{
+	Name("0xcaab4160");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	PlayProbability(0.850000);
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x8c8c1831", 1);
+	}
+
+}
+
+SoundProperties(-0.012732, 0, -21.902086, 0, -625225.750000, 1.891537, 0)
+{
+	Name("0x9b15091d");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x8607ecd4", 0.300000);
+		Sample("0x9a87c18e", 0.700000);
+	}
+
+}
+
+SoundProperties()
+{
+	Name("0xa58baae4");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	PlayProbability(0.850000);
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0xb9364b05", 1);
+	}
+
+}
+
+SoundProperties(-0.012732, 0, -4456964116556283904, -9223372036854775808, 0, -3392349853974528, -9223372036854775808)
+{
+	Name("0x1fd7c79");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x8607ecd4", 0.300000);
+		Sample("0xffc1af4", 0.700000);
+	}
+
+}
+
+SoundProperties()
+{
+	Name("0x94e6e02");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	PlayProbability(0.850000);
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0xb7761fa1", 1);
+	}
+
+}
+
+SoundProperties(-31661077037056, 0, 0, 0)
+{
+	Name("0xecde45ef");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x8607ecd4", 0.300000);
+		Sample("0xcac3530", 0.700000);
+	}
+
+}
+
+SoundProperties()
+{
+	Name("0x7a21d8d6");
+	Group("0x24384cb0");
+	Inherit("pain_chatter_template");
+	PlayProbability(0.850000);
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x2a544c77", 1);
+	}
+
+}
+
+SoundProperties(-0.012732, 0, 0, 0, 0, 0, 0, 755827.375000)
+{
+	Name("0x96d048d4");
+	Group("0x4018c961");
+	Inherit("pain_chatter_template");
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x8607ecd4", 0.300000);
+		Sample("0xf32f9b27", 0.500000);
+		Sample("0xa1c342d8", 0.200000);
+	}
+
+}
+
+SoundProperties()
+{
+	Name("0x15e7b21d");
+	Group("0x4018c961");
+	Inherit("pain_chatter_template");
+	PlayProbability(0.850000);
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x725b5bac", 1);
+	}
+
+}
+
+SoundProperties(-0.012732, 0, -9223372036854775808, 0, 0, -9223372036854775808)
+{
+	Name("0x7643eda6");
+	Group("0x4018c961");
+	Inherit("pain_chatter_template");
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x8607ecd4", 0.300000);
+		Sample("0xebf1b9e2", 0.700000);
+	}
+
+}
+
+SoundProperties()
+{
+	Name("0xf2575c21");
+	Group("0x4018c961");
+	Inherit("pain_chatter_template");
+	PlayProbability(0.850000);
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x716bdb57", 1);
+	}
+
+}
+
+SoundProperties(-0.012732, 0, 0, 0, -9223372036854775808)
+{
+	Name("0xe0bc3d34");
+	Group("0x4018c961");
+	Inherit("pain_chatter_template");
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x8607ecd4", 0.300000);
+		Sample("0x39ef25be", 0.700000);
+	}
+
+}
+
+SoundProperties()
+{
+	Name("0xd880a80b");
+	Group("0x4018c961");
+	Inherit("pain_chatter_template");
+	PlayProbability(0.850000);
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x7ebf4e57", 1);
+	}
+
+}
+
+SoundProperties(-0.012732, 0, 0, -13289196093440)
+{
+	Name("0x8556c5fa");
+	Group("0x4018c961");
+	Inherit("pain_chatter_template");
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x8607ecd4", 0.300000);
+		Sample("0x530f9d43", 0.700000);
+	}
+
+}
+
+SoundProperties()
+{
+	Name("0x2bfb056d");
+	Group("0x4018c961");
+	Inherit("pain_chatter_template");
+	PlayProbability(0.850000);
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x84c4c69", 0.500000);
+		Sample("0x54c47b0", 0.500000);
+	}
+
+}
+
+SoundProperties(-0.012732, 0, -9223372036854775808, 0)
+{
+	Name("0x7a6fb3a8");
+	Group("0x4018c961");
+	Inherit("pain_chatter_template");
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0x8607ecd4", 0.300000);
+		Sample("0x80e08345", 0.700000);
+	}
+
+}
+
+SoundProperties()
+{
+	Name("0x32e1284b");
+	Group("0x4018c961");
+	Inherit("pain_chatter_template");
+	PlayProbability(0.850000);
+	Gain(1);
+	MinDistance(20);
+	Pitch(1);
+	PitchDev(0);
+	SampleList()
+	{
+		Sample("0xacf41bb0", 1);
+	}
+
+}
+

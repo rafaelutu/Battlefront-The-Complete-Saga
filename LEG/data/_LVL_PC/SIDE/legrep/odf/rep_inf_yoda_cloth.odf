@@ -1,0 +1,10 @@
+[GameObjectClass]
+
+ClassParent = "cloth"
+
+[Properties]
+
+attachedmesh = "rep_inf_yoda"
+WindSpeed = 0.0
+Dampening = 0.5
+Drag = -2.0

@@ -1,0 +1,13 @@
+[GameObjectClass]
+
+ClassParent = "cis_inf_default_engineer"
+GeometryName = "lego_battledroid_LP.msh"
+
+[Properties]
+
+GeometryName = "lego_battledroid_LP"
+GeometryLowRes = "lego_battledroid_lowrez"
+SkeletonName = "ldroi"
+SkeletonLowRes = "bdroidlz"
+FirstPerson = "CIS\cisbdrd;cis_1st_bdroid"
+OverrideTexture = "lego_bdroid_commander"

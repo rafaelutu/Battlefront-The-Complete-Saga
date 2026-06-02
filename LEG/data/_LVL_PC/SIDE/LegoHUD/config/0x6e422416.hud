@@ -1,0 +1,1356 @@
+0x16ce484a();
+Viewport("Transforms")
+{
+	EventNameFilter("player%");
+	TransformNameMesh("player1weapon1")
+	{
+		NameMesh("rep_weap_inf_dc15s_carbine", "com_inv_mesh");
+		NameMesh("rep_weap_inf_dc15s_carbine_ext", "com_inv_mesh");
+		NameMesh("rep_weap_inf_dc17_pistol", "com_inv_mesh");
+		NameMesh("rep_weap_inf_dc15a_rifle", "com_inv_mesh");
+		NameMesh("rep_weap_inf_westar_m5", "com_inv_mesh");
+		NameMesh("rep_weap_inf_westar_noscope", "com_inv_mesh");
+		NameMesh("rep_weap_inf_westar_barrel", "com_inv_mesh");
+		NameMesh("rep_weap_inf_chaingun", "com_inv_mesh");
+		NameMesh("rep_weap_inf_rps6_launcher", "com_inv_mesh");
+		NameMesh("rep_weap_inf_plx1_launcher", "com_inv_mesh");
+		NameMesh("rep_weap_inf_launcher", "com_inv_mesh");
+		NameMesh("rep_weap_inf_dp23_shotgun", "com_inv_mesh");
+		NameMesh("rep_weap_inf_dc15x_sniper", "com_inv_mesh");
+		NameMesh("rep_weap_inf_dc17x_sniper", "com_inv_mesh");
+		NameMesh("rep_weap_inf_sniper_rifle_valken", "com_inv_mesh");
+		NameMesh("rep_weap_inf_dc17s_pistol", "com_inv_mesh");
+		NameMesh("rep_weap_inf_dc15h_pistol", "com_inv_mesh");
+		NameMesh("rep_weap_inf_galaar15_pistol", "com_inv_mesh");
+		NameMesh("hud_rep_mando_birds", "com_inv_mesh");
+		NameMesh("rep_weap_inf_dc15_side", "com_inv_mesh");
+		NameMesh("rep_weap_inf_dc15a_launcher", "com_inv_mesh");
+		NameMesh("rep_weap_inf_bowcaster", "com_inv_mesh");
+		NameMesh("rep_weap_inf_dc17m_rifle", "com_inv_mesh");
+		NameMesh("rep_weap_inf_dc17m_sniper", "com_inv_mesh");
+		NameMesh("rep_weap_inf_dc17m_launcher", "com_inv_mesh");
+		NameMesh("rep_weap_inf_mpl57", "com_inv_mesh");
+		NameMesh("hud_rep_dc17_double", "com_inv_mesh");
+		NameMesh("hud_rep_dc17_spread", "com_inv_mesh");
+		NameMesh("hud_rep_dc17s_spread", "com_inv_mesh");
+		NameMesh("rep_1st_weap_inf_elg_3a", "com_inv_mesh");
+		NameMesh("rep_weap_inf_droidstunner", "com_inv_mesh");
+		NameMesh("gar_weap_inf_cr2_rifle", "com_inv_mesh");
+		NameMesh("gar_weap_inf_s5_pistol", "com_inv_mesh");
+		NameMesh("gar_weap_inf_rocketlauncher", "com_inv_mesh");
+		NameMesh("gar_weap_inf_q2", "com_inv_mesh");
+		NameMesh("gar_weap_inf_dl44_pistol", "com_inv_mesh");
+		NameMesh("gar_weap_inf_e11", "com_inv_mesh");
+		NameMesh("gar_weap_inf_a280_blaster", "com_inv_mesh");
+		NameMesh("gar_weap_inf_dh17_pistol", "com_inv_mesh");
+		NameMesh("gar_weap_inf_dl18_pistol", "com_inv_mesh");
+		NameMesh("cis_weap_inf_e5_blaster", "com_inv_mesh");
+		NameMesh("cis_weap_inf_e5_blaster_ext", "com_inv_mesh");
+		NameMesh("cis_weap_inf_e5_pistol", "com_inv_mesh");
+		NameMesh("cis_weap_inf_e5_shotgun", "com_inv_mesh");
+		NameMesh("cis_weap_inf_e5c_rifle", "com_inv_mesh");
+		NameMesh("cis_weap_inf_rg4d_pistol", "com_inv_mesh");
+		NameMesh("cis_weap_inf_se14_pistol", "com_inv_mesh");
+		NameMesh("cis_weap_inf_dt57_blaster", "com_inv_mesh");
+		NameMesh("cis_weap_inf_rocketlauncher", "com_inv_mesh");
+		NameMesh("cis_weap_inf_sniperrifle", "com_inv_mesh");
+		NameMesh("hud_cis_sniperrifle", "com_inv_mesh");
+		NameMesh("cis_weap_inf_acp_array", "com_inv_mesh");
+		NameMesh("cis_weap_inf_acp_repeater", "com_inv_mesh");
+		NameMesh("cis_weap_inf_huntrifle", "com_inv_mesh");
+		NameMesh("cis_weap_inf_dlt20a", "com_inv_mesh");
+		NameMesh("cis_weap_inf_e11", "com_inv_mesh");
+		NameMesh("hud_cis_trishot", "com_inv_mesh");
+		NameMesh("hud_cis_twinblaster", "com_inv_mesh");
+		NameMesh("hud_cis_wristblaster", "com_inv_mesh");
+		NameMesh("hud_cis_droideka_repeater", "com_inv_mesh");
+		NameMesh("hud_cis_droideka_repeater_overcharge", "com_inv_mesh");
+		NameMesh("hud_cis_droideka_repeater_precise", "com_inv_mesh");
+		NameMesh("hud_cis_magnastaff", "com_inv_mesh");
+		NameMesh("hud_cis_bx_pistol", "com_inv_mesh");
+		NameMesh("hud_cis_wristrocket", "com_inv_mesh");
+		NameMesh("geo_weap_inf_blunderbuss", "com_inv_mesh");
+		NameMesh("hud_geo_barrage", "com_inv_mesh");
+		NameMesh("hud_cis_westar", "com_inv_mesh");
+		NameMesh("hud_cis_cyberdart", "com_inv_mesh");
+		NameMesh("hud_cis_flamethrower", "com_inv_mesh");
+		NameMesh("hud_cis_e5poison", "com_inv_mesh");
+		NameMesh("cis_weap_inf_rt97_rifle", "com_inv_mesh");
+		NameMesh("hud_force_lightning", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_yoda", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_lance", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_ventress", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_luminara", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_grievous", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_aalya", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_obiwan", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_sevrance", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_windu", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_dooku", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_shaakti", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_maul", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_maul2", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_anakin", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_oppo", "com_inv_mesh");
+		NameMesh("hud_hero_lightsaber_kylekatarn", "com_inv_mesh");
+		NameMesh("hud_hero_predator", "com_inv_mesh");
+		EventInput("player1.weapon1.change");
+		EventOutput("player1.weapon1.mesh");
+	}
+
+}
+
+Group("extraWeaponDisplay")
+{
+	PropagateAlpha(1);
+	Viewport(1);
+	Position();
+	ZOrder(0);
+	EventEnable("player1.weaponsEnable");
+	EventDisable("player1.weaponsDisable");
+	Group("extraWeaponIcon")
+	{
+		Viewport(1);
+		Position();
+		Scale(0.500000, 0.500000, 0.500000);
+		EventEnable("initialize");
+		Model3D("player1")
+		{
+			EventMesh("player1.weapon1.change");
+			Viewport(1);
+			ZOrder(0);
+			EventEnable("player1.weapon1.mesh");
+			EventDisable("player1.weapon1.disable");
+			Position();
+			Rotation(0, 0, 0);
+			Scale(0, 0, 0);
+			MeshInfo("rep_weap_inf_dc15s_carbine")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_dc15s_carbine_ext")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_dc17_pistol")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_dc15a_rifle")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(0.950000, 0.950000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_westar_m5")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_westar_noscope")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_westar_barrel")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_chaingun")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(0.850000, 0.850000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_rps6_launcher")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(0.900000, 0.900000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_plx1_launcher")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(0.900000, 0.900000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_launcher")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_dp23_shotgun")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_dc15x_sniper")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(0.950000, 0.950000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_dc17x_sniper")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(0.950000, 0.950000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_sniper_rifle_valken")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_dc17s_pistol")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_dc15h_pistol")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1.200000, 1.200000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_galaar15_pistol")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1.200000, 1.200000, 0.010000);
+			}
+
+			MeshInfo("hud_rep_mando_birds")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1.200000, 1.200000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_dc15_side")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("hud_rep_dc17_double")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("hud_rep_dc17_spread")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("hud_rep_dc17s_spread")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_dc15a_launcher")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(0.950000, 0.950000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_bowcaster")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(0.900000, 0.900000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_dc17m_rifle")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_dc17m_sniper")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_dc17m_launcher")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_mpl57")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("rep_1st_weap_inf_elg_3a")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("rep_weap_inf_droidstunner")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1.700000, 1.500000, 0.010000);
+			}
+
+			MeshInfo("gar_weap_inf_cr2_rifle")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("gar_weap_inf_s5_pistol")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("gar_weap_inf_rocketlauncher")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(0.850000, 0.850000, 0.010000);
+			}
+
+			MeshInfo("gar_weap_inf_q2")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1.200000, 1.200000, 0.010000);
+			}
+
+			MeshInfo("gar_weap_inf_dl44_pistol")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("gar_weap_inf_e11")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("gar_weap_inf_a280_blaster")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("gar_weap_inf_dh17_pistol")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("gar_weap_inf_dl18_pistol")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_e5_blaster")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_e5_blaster_ext")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_e5c_rifle")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_dt57_blaster")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_e5_pistol")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_e5_shotgun")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_rg4d_pistol")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_se14_pistol")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_rocketlauncher")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(0.850000, 0.850000, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_sniperrifle")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(0.900000, 0.900000, 0.010000);
+			}
+
+			MeshInfo("hud_cis_sniperrifle")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(0.900000, 0.900000, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_acp_array")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_acp_repeater")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_huntrifle")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(0.800000, 0.800000, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_dlt20a")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_e11")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("hud_cis_wristblaster")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("hud_cis_trishot")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(0.700000, 0.700000, 0.010000);
+			}
+
+			MeshInfo("hud_cis_twinblaster")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(0.700000, 0.700000, 0.010000);
+			}
+
+			MeshInfo("hud_cis_droideka_repeater")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("hud_cis_droideka_repeater_overcharge")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("hud_cis_droideka_repeater_precise")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("hud_cis_magnastaff")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.400000, 1.400000, 0.010000);
+			}
+
+			MeshInfo("hud_cis_bx_pistol")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("hud_cis_wristrocket")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(0.900000, 0.900000, 0.900000);
+			}
+
+			MeshInfo("hud_cis_westar")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("hud_cis_cyberdart")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("hud_cis_flamethrower")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("hud_cis_e5poison")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(0.700000, 0.700000, 0.010000);
+			}
+
+			MeshInfo("cis_weap_inf_rt97_rifle")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("geo_weap_inf_blunderbuss")
+			{
+				Position();
+				Rotation(-12.500000, 90, 0);
+				Scale(0.900000, 0.900000, 0.010000);
+			}
+
+			MeshInfo("hud_geo_barrage")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("hud_force_lightning")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(0.700000, 0.700000, 0.700000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_yoda")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.300000, 1.300000, 0.010000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_lance")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_ventress")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_luminara")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_grievous")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_aalya")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_obiwan")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_sevrance")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_windu")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_dooku")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_shaakti")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_maul")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1, 1, 1);
+			}
+
+			MeshInfo("hud_hero_lightsaber_maul2")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_anakin")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_oppo")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("hud_hero_lightsaber_kylekatarn")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("hud_hero_predator")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(0.700000, 0.700000, 0.010000);
+			}
+
+		}
+
+	}
+
+}
+
+TransformNameMesh("player1weapon2")
+{
+	NameMesh("hud_weap_thermaldetonator", "com_inv_mesh");
+	NameMesh("hud_weap_droidcracker", "com_inv_mesh");
+	NameMesh("hud_weap_antishieldgrenade", "com_inv_mesh");
+	NameMesh("hud_weap_crackgrenade", "com_inv_mesh");
+	NameMesh("hud_weap_impactgrenade", "com_inv_mesh");
+	NameMesh("com_weap_inf_protoncharge", "com_inv_mesh");
+	NameMesh("com_weap_inf_protoncharge_alt", "com_inv_mesh");
+	NameMesh("com_weap_inf_tripmine", "com_inv_mesh");
+	NameMesh("hud_weap_baradiumdetonator", "com_inv_mesh");
+	NameMesh("hud_weap_heatcharge", "com_inv_mesh");
+	NameMesh("hud_weap_plasmadetonator", "com_inv_mesh");
+	NameMesh("hud_weap_shockgrenade", "com_inv_mesh");
+	NameMesh("hud_weap_dioxisgrenade", "com_inv_mesh");
+	NameMesh("hud_weap_radiationgrenade", "com_inv_mesh");
+	NameMesh("hud_weap_medkit", "com_inv_mesh");
+	NameMesh("hud_weap_shieldgenerator", "com_inv_mesh");
+	NameMesh("hud_weap_flamegrenade", "com_inv_mesh");
+	NameMesh("hud_weap_sonicdetonator", "com_inv_mesh");
+	NameMesh("hud_weap_barragegrenade", "com_inv_mesh");
+	NameMesh("hud_weap_boomadetonator", "com_inv_mesh");
+	NameMesh("hud_weap_fraggrenade", "com_inv_mesh");
+	NameMesh("hud_rep_stealth", "com_inv_mesh");
+	NameMesh("hud_rep_commander", "com_inv_mesh");
+	NameMesh("hud_rep_wookie", "com_inv_mesh");
+	NameMesh("hud_rep_vibro", "com_inv_mesh");
+	NameMesh("hud_rep_recondart", "com_inv_mesh");
+	NameMesh("hud_cis_rage", "com_inv_mesh");
+	NameMesh("hud_cis_droideka_shield", "com_inv_mesh");
+	NameMesh("hud_cis_sbd_grenade", "com_inv_mesh");
+	NameMesh("hud_cis_sbd_launcher", "com_inv_mesh");
+	NameMesh("hud_cis_wristrocket", "com_inv_mesh");
+	NameMesh("hud_cis_commander", "com_inv_mesh");
+	NameMesh("hud_cis_radiation", "com_inv_mesh");
+	NameMesh("hud_geo_stealth", "com_inv_mesh");
+	NameMesh("hud_cis_stimpack", "com_inv_mesh");
+	NameMesh("hud_cis_tripdart", "com_inv_mesh");
+	NameMesh("cis_weap_inf_bx_sword", "com_inv_mesh");
+	NameMesh("com_weap_inf_torpedo", "com_inv_mesh");
+	NameMesh("com_weap_probedroid", "com_inv_mesh");
+	NameMesh("com_weap_inf_z58_droid", "com_inv_mesh");
+	NameMesh("com_weap_inf_dropturret", "com_inv_mesh");
+	NameMesh("com_weap_inf_dropturret_yellow", "com_inv_mesh");
+	NameMesh("hud_hero_force_ball", "com_inv_mesh");
+	NameMesh("hud_hero_force_stasis", "com_inv_mesh");
+	NameMesh("hud_hero_force_push", "com_inv_mesh");
+	NameMesh("hud_hero_force_push2", "com_inv_mesh");
+	NameMesh("hud_hero_force_pull", "com_inv_mesh");
+	NameMesh("hud_hero_force_pull2", "com_inv_mesh");
+	NameMesh("hud_hero_forcewave_pull", "com_inv_mesh");
+	NameMesh("hud_hero_force_heal", "com_inv_mesh");
+	NameMesh("hud_hero_force_plague", "com_inv_mesh");
+	NameMesh("hud_hero_force_trick", "com_inv_mesh");
+	NameMesh("hud_hero_force_choke", "com_inv_mesh");
+	NameMesh("hud_hero_force_strike", "com_inv_mesh");
+	NameMesh("hud_hero_force_shield", "com_inv_mesh");
+	NameMesh("hud_hero_force_barrage", "com_inv_mesh");
+	NameMesh("hud_hero_force_cloak", "com_inv_mesh");
+	NameMesh("hud_hero_force_speed", "com_inv_mesh");
+	NameMesh("hud_hero_force_light", "com_inv_mesh");
+	NameMesh("hud_hero_force_aura", "com_inv_mesh");
+	NameMesh("hud_hero_force_wave", "com_inv_mesh");
+	NameMesh("hud_hero_force_ghost", "com_inv_mesh");
+	NameMesh("hud_hero_force_lance", "com_inv_mesh");
+	NameMesh("hud_hero_force_judgement", "com_inv_mesh");
+	NameMesh("hud_hero_saber_throw", "com_inv_mesh");
+	NameMesh("hud_hero_poison", "com_inv_mesh");
+	NameMesh("hud_hero_bryarpistol", "com_inv_mesh");
+	NameMesh("hud_hero_grievous", "com_inv_mesh");
+	NameMesh("hud_hero_grievous2", "com_inv_mesh");
+	NameMesh("hud_hero_grapple_hook", "com_inv_mesh");
+	NameMesh("hud_geo_swarm", "com_inv_mesh");
+	EventInput("player1.weapon2.change");
+	EventOutput("player1.weapon2.mesh");
+}
+
+Group("extraWeaponDisplay")
+{
+	PropagateAlpha(1);
+	Viewport(1);
+	Position();
+	ZOrder(0);
+	EventEnable("player1.weaponsEnable");
+	EventDisable("player1.weaponsDisable");
+	Group("extraWeaponIcon")
+	{
+		Viewport(1);
+		Position();
+		Scale(0.500000, 0.500000, 0.500000);
+		EventEnable("initialize");
+		Model3D("player1")
+		{
+			EventMesh("player1.weapon2.change");
+			Viewport(1);
+			ZOrder(0);
+			EventEnable("player1.weapon2.mesh");
+			EventDisable("player1.weapon2.disable");
+			Position();
+			Rotation(0, 0, 0);
+			Scale(0, 0, 0);
+			MeshInfo("hud_weap_thermaldetonator")
+			{
+				Position();
+				Rotation(0, 0, 0);
+			}
+
+			MeshInfo("hud_weap_droidcracker")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1, 1, 2);
+			}
+
+			MeshInfo("hud_weap_antishieldgrenade")
+			{
+				Position();
+				Rotation(0, 0, 0);
+			}
+
+			MeshInfo("hud_weap_crackgrenade")
+			{
+				Position();
+				Rotation(0, 0, 0);
+			}
+
+			MeshInfo("hud_weap_impactgrenade")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(0.900000, 0.900000, 0.900000);
+			}
+
+			MeshInfo("com_weap_inf_protoncharge")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(2, 2, 0.010000);
+			}
+
+			MeshInfo("com_weap_inf_protoncharge_alt")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(2, 2, 0.010000);
+			}
+
+			MeshInfo("com_weap_inf_tripmine")
+			{
+				Position();
+				Rotation(270, 0, 90);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("hud_weap_baradiumdetonator")
+			{
+				Position();
+				Rotation(0, 0, 0);
+			}
+
+			MeshInfo("hud_weap_heatcharge")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1, 1, 2);
+			}
+
+			MeshInfo("hud_weap_plasmadetonator")
+			{
+				Position();
+				Rotation(0, 0, 0);
+			}
+
+			MeshInfo("hud_weap_shockgrenade")
+			{
+				Position();
+				Rotation(0.900000, 0.900000, 0.900000);
+				Scale(0.800000, 0.800000, 2);
+			}
+
+			MeshInfo("hud_weap_dioxisgrenade")
+			{
+				Position();
+				Rotation(0.900000, 0.900000, 0.900000);
+				Scale(0.900000, 0.900000, 2);
+			}
+
+			MeshInfo("hud_weap_radiationgrenade")
+			{
+				Position();
+				Rotation(0.900000, 0.900000, 0.900000);
+				Scale(0.900000, 0.900000, 2);
+			}
+
+			MeshInfo("hud_weap_medkit")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.300000, 1.300000, 2);
+			}
+
+			MeshInfo("hud_weap_shieldgenerator")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(0.800000, 0.800000, 2);
+			}
+
+			MeshInfo("hud_weap_flamegrenade")
+			{
+				Position();
+				Rotation(0.900000, 0.900000, 0.900000);
+			}
+
+			MeshInfo("hud_weap_sonicdetonator")
+			{
+				Position();
+				Rotation(0.900000, 0.900000, 0.900000);
+			}
+
+			MeshInfo("hud_weap_barragegrenade")
+			{
+				Position();
+				Rotation(0, 0, 0);
+			}
+
+			MeshInfo("hud_weap_boomadetonator")
+			{
+				Position();
+				Rotation(0, 0, 0);
+			}
+
+			MeshInfo("hud_weap_fraggrenade")
+			{
+				Position();
+				Rotation(0, 0, 0);
+			}
+
+			MeshInfo("hud_rep_stealth")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_rep_commander")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_rep_wookie")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_rep_vibro")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_rep_recondart")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_cis_rage")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_cis_droideka_shield")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_cis_commander")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_cis_radiation")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_geo_stealth")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_cis_stimpack")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_cis_tripdart")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("cis_weap_inf_bx_sword")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1.400000, 1.400000, 0.010000);
+			}
+
+			MeshInfo("hud_cis_sbd_grenade")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_cis_sbd_launcher")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_cis_wristrocket")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(0.900000, 0.900000, 0.900000);
+			}
+
+			MeshInfo("hud_hero_force_ball")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_stasis")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_push")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_push2")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_pull")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_pull2")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_forcewave_pull")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_heal")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_plague")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_trick")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_choke")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_strike")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_shield")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_barrage")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_cloak")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_speed")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_light")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_aura")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_wave")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_ghost")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_lance")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_force_judgement")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_saber_throw")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_poison")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_grapple_hook")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_geo_swarm")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_bryarpistol")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_grievous")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("hud_hero_grievous2")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 1.100000);
+			}
+
+			MeshInfo("com_weap_inf_torpedo")
+			{
+				Position();
+				Rotation(0, 90, 0);
+				Scale(1.300000, 1.300000, 0.010000);
+			}
+
+			MeshInfo("com_weap_probedroid")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.800000, 1.800000, 0.010000);
+			}
+
+			MeshInfo("com_weap_inf_z58_droid")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1, 1, 0.010000);
+			}
+
+			MeshInfo("com_weap_inf_dropturret")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+			MeshInfo("com_weap_inf_dropturret_yellow")
+			{
+				Position();
+				Rotation(0, 0, 0);
+				Scale(1.100000, 1.100000, 0.010000);
+			}
+
+		}
+
+	}
+
+}
+

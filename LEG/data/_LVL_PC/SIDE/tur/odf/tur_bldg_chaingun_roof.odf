@@ -1,0 +1,39 @@
+[GameObjectClass]
+
+ClassLabel = "armedbuilding"
+GeometryName = "com_bldg_chaingun_roof.msh"
+
+[Properties]
+
+BuildingSection = "BODY"
+PilotType = "self"
+MapTexture = "turret_icon"
+MapScale = 1.2
+GeometryName = "com_bldg_chaingun_roof"
+DestroyedGeometryName = "com_bldg_chaingun_roof_dest"
+ExplosionName = "com_inf_rechargedroid_exp"
+MaxHealth = 50.0
+HealthTypeForLockOn = "Droid"
+BuildingSection = "TURRET1"
+PilotType = "self"
+TurretNodeName = "aimer_y"
+PitchLimits = "-10 60"
+YawLimits = "-180 180"
+PitchTurnFactor = 0.0
+ThirdPersonFOV = 65
+WeaponName = "tur_weap_laser_auto"
+WeaponAmmo = 0
+MaxTurnSpeed = 5.0
+MaxPitchSpeed = 5.0
+PCMaxPitchSpeed = 5.0
+PCMaxTurnSpeed = 5.0
+TURRETSECTION = "TURRET1"
+AimerNodeName = "aimer_x"
+AimerPitchLimits = "-30 20"
+AimerYawLimits = "0 0"
+TurretYawSound = "turret_whir_yaw_lp defer"
+TurretYawSoundPitch = 0.7
+TurretPitchSound = "turret_whir_pitch_lp defer"
+TurretPitchSoundPitch = 0.7
+TurretActivateSound = "vehicle_equip defer"
+TurretDeactivateSound = "vehicle_equip defer"
